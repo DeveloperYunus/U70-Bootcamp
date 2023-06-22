@@ -1,0 +1,121 @@
+		ADADA FPS MEKANÝKLERÝ		- = yapýlacaklar,  + = yapýldý
+
+(1 gün) - First person movement ve camera sistemi
+	Unity'nin hazýr fps paketi alýndý birkaç düzenleme yapýldý. Ve iþleyiþ anlaþýlmaya çalýþýldý. (09.06.2023 - 09.06.2023)
+
+(3 gün) - Menzilli silahlar ile düþmanlarý vurabilmek. (10.06.2023 - 12.06.2023)
+	1. Silah ve mermi objeleri
+		+ Silah normal salýným animasyonu
+		+ Ateþleme animasyonunuda hallet
+		+ Reload animasyonu
+		+ Silah duvara yaklaþýnca aþaðý eðilsin
+		+ Otomatik reload sistemi
+
+	3. Patlama duman vfx
+		+ Namlu vfx
+		+ Horoz vfx
+
+	4. Silahýn mermi atmasý
+		+ Instantiate ile mermi atmak - raycast ile çözüldü (cameranýn ortasýdan ray atýlýyor ve çarptýðý yere hasar veriliyor)
+		+ Mermilerin çarptýklarý yerde yok olmalarý - iptal (sadece ray atýlan yerde bir particle oynuyor artýk)
+		+ Object pooling
+
+	5. Düþman kuklasý
+		+ Düþman hp system
+
+
+
+
+
+		ADALARDAKÝ DÜÞMANLARIN NAVMESH ÝLE YAPAY ZEKALARI
+
+(0.33 gün) - Düþmanlar kýlýç ile bize koþsunlar
+		+ Düþman iskelet  modelleri eklenecek
+		+ Navmesh ile bize doðru koþacaklar
+		+ Koþma animasyonlarý aktifleþtirilecek
+
+(0.33 gün) - Dibimize gelince koþmayý býrakýp saldýrsýnlar
+		+ Saldýrý animasyonlarý aktifleþtirilecek
+		+ Player HP system
+		+ Kýlýç bize deðerse hasar verecek
+
+(0.33 gün) - Düþmanlar, canlarý sýfýrlanýnca ölsünler
+		+ EnemyHP içinde ayrýntýlý þekilde yazýldý
+
+
+		+ Düþmanlar saldýrýrken tam olarak bize doðru baksýnlar biz kaçarkende bize dönsünler (saldýrý yaparken hýzý normalin yarýsýna düþsün ama yinede bize doru gelsin)
+		+ Player ölüm kýsmýný ayarla
+		- Enemy +1 saldýrý animasyonu (yapamadým) - hepsi bir arada olan paketten saldýrý animasyonu almaya bak   ??????
+		+ Enemy ölme animasyonu (ragdoll ile halledildi)
+		+ Düþmanlar öldüklerinde zemine doðru çekilsinler
+		- Düþmanlar öldüklerinde dissolve gibi bir gözden kaybolma shader'ý oynayabilir - (yapamadým)
+
+		+ Benim sistemler adalara entegre edilecek
+		+ Collectable objectler üretilecek ve etkile uygulanacak - objeler kendini belli edecek þekilde göz alýcý olacak ve üzerlerine yürüyünce onlarý alacaðýz
+		+ Ýskeletler öldüklerinde yerde rasgele mermi çýksýn
+
+		+ Boss yapay zekasý yazýlacak
+			+ 4 tane hýzlý fireball atar
+			+ Ardýndan zeminden 4 tane iskelet çýkartýr
+				+ Ýskeletleri çýkartýrken bir kalkan aktif olsun ve hasar almasýn
+			+ Hareket edemez, sadece dönebilir
+			+ Fireball herhangi bir þeye temas halinde patlayacak
+			+ Bize deðerse hasar verecek
+			+ FireBall vfx yapýlacak
+			+ Fireball enemylerin içinden gececek 
+
+
+		- Player ahsar alýnca hasar nispetinde ekran sallansýn
+		- Player ateþ edince ekran sallansýn
+		+ Mermiler düþmana ateþ edince hit ui'ý gözüksün
+		+ Player öldüðünde kullanýcý inputlarý çalýþmasýn
+
+
+
+
+Olasý 4- Player bomba atma mekaniði eklenebilir
+Olasý 5- Eðer her þey iyi giderse menzilli düþman eklenebilir 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notlar
+1- oyunu mobilde oynayacaðýmýz için player controller scriptindeki "Rotation Speed" deðiþkenini 0.2f deðerine almamýz lazým. ben þimdi bilisayarda test ettiðimden 1f deðerinde kalsýn.
+2- Oyun çýktý alýnacaðý zaman 60 fps'e sýnýrlandýrýlmalý  
+
+
+        //UnityEditor.EditorApplication.isPaused = true;
+
+		//childTransform.SetLocalPositionAndRotation(new Vector3(0, 0.05f, 0), Quaternion.Euler(0, 5, 0));   ----> animasyonlar saçma sapan oynarken bunun ile rot ve pos'u sabit tuttuk
+
+
+
+void InstantiateBullet()		//mermili fps mekaniði
+    {
+        GameObject a = Instantiate(bulletPrefab, muzzlePos.position, Quaternion.identity);
+
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out RaycastHit hit, range))       //bu ray bir þeye çarparsa true döndürür
+        {
+            //Debug.Log(hit.transform.tag);
+
+            Vector3 direction = hit.point - muzzlePos.position;                                       //cameradan attýðýz ýþýnýn oduðu noktaya ateþ eder
+
+
+            a.GetComponent<Rigidbody>().velocity = direction.normalized * bulletSpeed;
+        }
+        else
+        {
+            a.GetComponent<Rigidbody>().velocity = muzzlePos.right * bulletSpeed;
+        }
+    }
