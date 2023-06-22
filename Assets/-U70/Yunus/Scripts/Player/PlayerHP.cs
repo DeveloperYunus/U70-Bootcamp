@@ -43,6 +43,8 @@ public class PlayerHP : MonoBehaviour
     }
     public void GetDamage(float damage)
     {
+        PistolController.ins.ShakeScreenn(0.3f, damage / 10, 6);
+
         hp -= damage - damage * armour;
 
         if (hp <= 0)
