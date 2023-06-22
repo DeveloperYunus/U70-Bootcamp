@@ -57,6 +57,7 @@ MonoBehaviour:
     m_Bits: 64
   muzzleFlashPS: {fileID: 4130500329454042078}
   sparklingPS: {fileID: 3757357299970014206}
+  cam: {fileID: 994970581857472153}
   bulletPrefab: {fileID: 4101243709229051385, guid: 8d68df292e1271742924bca361b21609, type: 3}
   ammoTxt: {fileID: 3757357301532790768}
   bullet: {fileID: 11400000, guid: 2dcdcd94ea6423140a764821f11012b7, type: 2}
@@ -8222,6 +8223,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4173157857957914319, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
   m_PrefabInstance: {fileID: 3757357301172938839}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &994970581857472153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4173157857957914318, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
+  m_PrefabInstance: {fileID: 3757357301172938839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3757357301514022959
 PrefabInstance:
   m_ObjectHideFlags: 0

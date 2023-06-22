@@ -1,4 +1,7 @@
+using Cinemachine;
+using System.Collections;
 using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class PistolController : MonoBehaviour
@@ -25,9 +28,12 @@ public class PistolController : MonoBehaviour
     bool isFrontWall;
 
 
-    [Header("Attack VFX")]
+    [Header("Attack VFX/Effect")]
     public ParticleSystem muzzleFlashPS;
     public ParticleSystem sparklingPS;
+    public CinemachineVirtualCamera cam;
+
+    float defauldFre, defauldAmp;
 
     [Header("Attack System")]
     public GameObject bulletPrefab;
@@ -54,12 +60,15 @@ public class PistolController : MonoBehaviour
         pistolObj = GetComponent<Transform>();
         muzzlePos = muzzleFlashPS.transform;
 
-
         canAtk = true;
         isFrontWall = false;
 
         ammo = maxPistolAmmo;
         ammoTxt.text = ammo.ToString();
+
+
+        defauldFre = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain;
+        defauldAmp = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain;
     }
     void Update()
     {
@@ -96,6 +105,7 @@ public class PistolController : MonoBehaviour
         if (canAtk && !isFrontWall && ammo > 0 && PlayerHP.ins.isAlive)
         {
             pistolAnim.SetTrigger("pistolShoot");
+            ShakeScreenn(0.15f, 1f, 8);
 
             sparklingPS.Play();
             Invoke(nameof(SmokeDelay), 0.15f);
@@ -170,6 +180,17 @@ public class PistolController : MonoBehaviour
             return bullet.ammoAmount;
         else
             return bullet.ammoAmount + ammo;
+    }
+    public void ShakeScreenn(float time, float amplitude, float frequncy)
+    {
+        StartCoroutine(ShakeScreen(0f, amplitude, frequncy));
+        StartCoroutine(ShakeScreen(time, defauldAmp, defauldFre));
+    }
+    IEnumerator ShakeScreen(float time, float amplitude, float frequncy)
+    {
+        yield return new WaitForSeconds(time);
+        cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = frequncy;
+        cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
     }
 
 
