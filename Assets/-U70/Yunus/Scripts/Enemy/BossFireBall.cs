@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BossFireBall : MonoBehaviour
 {
+    public Collider coll;
     public ParticleSystem fireBallVFX;
     public ParticleSystem fireBallExpVFX;
     
@@ -18,7 +19,7 @@ public class BossFireBall : MonoBehaviour
             StopFireball();
         }
 
-        if (other.CompareTag("Untagged") && other.CompareTag("Ground"))
+        if (other.CompareTag("Untagged") || other.CompareTag("Ground"))
         {
             StopFireball();
         }
@@ -26,6 +27,7 @@ public class BossFireBall : MonoBehaviour
 
     void StopFireball()
     {
+        coll.enabled = false;
         GetComponent<Rigidbody>().velocity = Vector3.zero;
         fireBallVFX.Stop();
         fireBallExpVFX.Play();

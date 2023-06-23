@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PistolController : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class PistolController : MonoBehaviour
     public int maxPocketAmmo;
 
     Transform muzzlePos;
+    int mask;                                               //linecast'teki layer ignore için 
     int ammo;
 
     [Space(10)]
@@ -57,9 +59,11 @@ public class PistolController : MonoBehaviour
     }
     void Start()
     {
+        mask = (1 << 8);                                      //enemy layer ýný kaydeder    (enemy, transparanFX, dontClose, ignore raycast)
+        mask = ~mask;                                         // "~" ifadesi ile tersini alýr (bu olmasa linecast sadece "8" nolu katmaný arar. Bu ifade ("~") varken sadece "8" nolu katmaný yoksayar)
+
         pistolObj = GetComponent<Transform>();
         muzzlePos = muzzleFlashPS.transform;
-
         canAtk = true;
         isFrontWall = false;
 
@@ -146,7 +150,7 @@ public class PistolController : MonoBehaviour
     }
     void InstantiateBullet()
     {
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out RaycastHit hit, range))       //bu ray bir þeye çarparsa true döndürür
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out RaycastHit hit, range, mask))       //bu ray bir þeye çarparsa true döndürür
         {
             if (hit.transform.CompareTag("EnemyBlood"))
             {

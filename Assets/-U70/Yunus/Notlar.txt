@@ -70,11 +70,60 @@
 		+ Mermiler düþmana ateþ edince hit ui'ý gözüksün
 		+ Player öldüðünde kullanýcý inputlarý çalýþmasýn
 
+		+ Silah ray'i bossfireball'ý görmeyecek
+		+ Fireball zemine deðince parçalanacak
 
 
 
-Olasý 4- Player bomba atma mekaniði eklenebilir
-Olasý 5- Eðer her þey iyi giderse menzilli düþman eklenebilir 
+
+	2. KISIM YAPILACAKLAR
+
+ADA OYNANIÞI TAMAMEN BÝTÝRÝLECEK
+
+	- Adalara enemyler ve collectableler belli bir sistematik üzerine eklenecek ve oyuncu mermi kontrolü yapmaya zorlanacak
+		- Player yerden yemek toplayýnca saðlýðý artacak
+		- Saðlýk fulse yemekleri toplayamayalým, cephane fulse mermileri toplayamayalým. Olduklarý yerde durmaya devam etsinler
+		- Collectableler'e bir shinig vfx'i eklenecek. (Belli olsunlar diye)
+		
+	- Enemyler, player belli bir alana girdikten sonra ona saldýrmaya baþlayacak
+	- Adalardaki tüm triggerlanabilir yada duvar olarak kullanýlacak colliderlar yeleþtirilecek
+		- Adanýn kenarlarýna görünmez duvarlar eklenecek ki player suya düþmesin
+	- Gekeli yerlere proplar yerleþtirilecek - level design
+	- 2. adadaki anahtari almak için gereki sistemler yazýlacak
+	- 3. adadaki kutuyu anahtarla açýp içindeki parþömeni almak için gerekli sistemler yazýlacak
+	- 4. adadaki kaleye girmek için gerekli sistemler yazýlacak
+
+
+OYUNUN TÜM SESLERÝ BULUNUP EKLENECEK
+
+
+GEMÝ HAREKET SÝSTEMÝ
+
+	- Bir tane animasyon parent'i olacak, bir tane code hareketleri için parent'i olacak
+	- A ve D ile sað sol yönleri belirlenecek
+	- geminin 2 ileri 1 geri hýz modu olur - (yelkenler hýz modlarýna göre açýlýp kapanýr)
+		- Geri vites 1 birim hýzýnda
+		- Boþta, hareket yok
+		- Ýleri vites 1.5 birim hýzýnda
+		- Ýleri hýzlý vites 3 birim hýzýnda
+	- AC 4 bakýþ açýsý ile adalarý bulmak zor olacaðýndan bir adet pusula eklenmeli.
+
+
+GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ
+
+	- Her ada için player baþlangýç noktasý
+	- Her ada için gemi park noktasý
+	- Gemi collidera girdikren sonra ekranda e tuþu gözükür tuþa basarsak gemi yavaþca park noktasýna gelir
+	- Gemi park noktasýna girdikten sonra gemi cm deaktif olur ve camera  belli bir süre sonra player cm ye gelir 
+	- Camera hareketi tamamlandýktan sonra bizim silah yavaþça aþaðýdan yukarý çýkar ve animasyon tamamlanýnca yürüme ve hareket etme deðiþkenimiz true olur, macera baþlar
+
+	- Gemiye geri dönmek için sahildeki iskeleye gidelime tuþu gözüksün basýnca ellerimiz aþaðýya insin ardýndan geminin cm'si aktif olsun 
+	- Cm yerine varýnca geminin kontrolleri aktif olsun
+
+
+CÝNEMATÝC ANÝMASTONLARI TAMAMLANACAK
+
+Tüm bunlarýn ardýndan dungeon yapýmýna geçilecek
 
 
 
@@ -95,11 +144,14 @@ Notlar
 2- Oyun çýktý alýnacaðý zaman 60 fps'e sýnýrlandýrýlmalý  
 
 
-        //UnityEditor.EditorApplication.isPaused = true;
-
-		//childTransform.SetLocalPositionAndRotation(new Vector3(0, 0.05f, 0), Quaternion.Euler(0, 5, 0));   ----> animasyonlar saçma sapan oynarken bunun ile rot ve pos'u sabit tuttuk
 
 
+
+ ----------------------------------       
+		
+	UnityEditor.EditorApplication.isPaused = true;
+
+-----------------------------------
 
 void InstantiateBullet()		//mermili fps mekaniði
     {
@@ -119,3 +171,16 @@ void InstantiateBullet()		//mermili fps mekaniði
             a.GetComponent<Rigidbody>().velocity = muzzlePos.right * bulletSpeed;
         }
     }
+
+-----------------------------------
+
+	int mask;                                               //linecast'teki layer ignore için 
+
+
+	mask = (1 << 8);                                      //enemy layer ýný kaydeder    (enemy, transparanFX, dontClose, ignore raycast)
+    mask = ~mask;                                         // "~" ifadesi ile tersini alýr (bu olmasa linecast sadece "8" nolu katmaný arar. Bu ifade ("~") varken sadece "8" nolu katmaný yoksayar)
+
+
+	Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out RaycastHit hit, range, mask)
+
+----------------------------------

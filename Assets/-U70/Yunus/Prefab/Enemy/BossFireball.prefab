@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1055638702}
   - component: {fileID: 1055638704}
   - component: {fileID: 1055638703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SparksTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4832,7 +4832,7 @@ GameObject:
   - component: {fileID: 1292062807}
   - component: {fileID: 1292062809}
   - component: {fileID: 1292062808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4848,8 +4848,8 @@ Transform:
   m_GameObject: {fileID: 1292062806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5182750174211632075}
   - {fileID: 3967379950974450431}
@@ -9647,7 +9647,7 @@ GameObject:
   - component: {fileID: 3986179179854468400}
   - component: {fileID: 4596544552808747570}
   - component: {fileID: 3005581897453850317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14529,7 +14529,7 @@ GameObject:
   - component: {fileID: 3967379950974450431}
   - component: {fileID: 1536483705279021372}
   - component: {fileID: 5810517160745587515}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19341,7 +19341,7 @@ GameObject:
   - component: {fileID: 2842615395412734109}
   - component: {fileID: 1385934892662625585}
   - component: {fileID: 6283296505462772174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24220,7 +24220,7 @@ GameObject:
   - component: {fileID: 5760576931617294389}
   - component: {fileID: 8523712033018379169}
   - component: {fileID: 3254070711643867581}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShockWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29091,7 +29091,7 @@ GameObject:
   - component: {fileID: 719142878324206687}
   - component: {fileID: 7498504463162283036}
   - component: {fileID: 594918663117399900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BossFireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29126,7 +29126,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3.0273314
+  m_Radius: 1.846553
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &7498504463162283036
 Rigidbody:
@@ -29156,6 +29156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b364be7c177f7e545a8222590867cfc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coll: {fileID: 719142878324206687}
   fireBallVFX: {fileID: 1292062809}
   fireBallExpVFX: {fileID: 4596544552808747570}
   damage: 10
@@ -29171,7 +29172,7 @@ GameObject:
   - component: {fileID: 5182750174211632075}
   - component: {fileID: 8962092127518803048}
   - component: {fileID: 2902117904034326059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33992,7 +33993,7 @@ GameObject:
   - component: {fileID: 439238260135232665}
   - component: {fileID: 1198941193415880942}
   - component: {fileID: 2329216961576532191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
