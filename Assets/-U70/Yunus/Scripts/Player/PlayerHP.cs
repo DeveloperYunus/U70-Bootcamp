@@ -12,12 +12,15 @@ public class PlayerHP : MonoBehaviour
     [Range(0f, 1f)]
     public float armour;
 
-    float hp;
+    [HideInInspector] public float hp;
     [HideInInspector] public bool isAlive;
 
     [Header("Objects")]
     public TextMeshProUGUI hpTxt;
     public Image hpImage;
+
+    [Header("Health")]
+    public ParticleSystem incHPEffect;                  //increase hp effect
 
 
     private void Awake()
@@ -51,6 +54,19 @@ public class PlayerHP : MonoBehaviour
         {
             hp = 0;
             Die();
+        }
+
+        hpImage.fillAmount = hp / maxHealth;
+        hpTxt.text = hp.ToString();
+    }
+    public void IncreaseHP(float value)
+    {
+        hp += value;
+
+        if (hp > maxHealth)
+        {
+            hp = maxHealth;
+            incHPEffect.Play();
         }
 
         hpImage.fillAmount = hp / maxHealth;

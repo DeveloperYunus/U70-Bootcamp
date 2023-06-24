@@ -14,7 +14,7 @@ public class GeneralPool : MonoBehaviour
 
     public static ObjectPooling bloodPool;
 
-    [Header("Blood Obj")]
+    [Header("Bullet Obj")]
     public GameObject bullet;
     public int bulletObjCountInPool;
 

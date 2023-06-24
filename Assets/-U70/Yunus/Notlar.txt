@@ -78,26 +78,27 @@
 
 	2. KISIM YAPILACAKLAR
 
-ADA OYNANIÞI TAMAMEN BÝTÝRÝLECEK
+(5 gün) ADA OYNANIÞI TAMAMEN BÝTÝRÝLECEK - 24.06.2023 baþlangýç
 
 	- Adalara enemyler ve collectableler belli bir sistematik üzerine eklenecek ve oyuncu mermi kontrolü yapmaya zorlanacak
-		- Player yerden yemek toplayýnca saðlýðý artacak
-		- Saðlýk fulse yemekleri toplayamayalým, cephane fulse mermileri toplayamayalým. Olduklarý yerde durmaya devam etsinler
+		+ Player yerden yemek toplayýnca saðlýðý artacak
+		+ Saðlýk fulse yemekleri toplayamayalým, cephane fulse mermileri toplayamayalým. Olduklarý yerde durmaya devam etsinler
 		- Collectableler'e bir shinig vfx'i eklenecek. (Belli olsunlar diye)
 		
 	- Enemyler, player belli bir alana girdikten sonra ona saldýrmaya baþlayacak
 	- Adalardaki tüm triggerlanabilir yada duvar olarak kullanýlacak colliderlar yeleþtirilecek
 		- Adanýn kenarlarýna görünmez duvarlar eklenecek ki player suya düþmesin
-	- Gekeli yerlere proplar yerleþtirilecek - level design
+	- Gerekli yerlere proplar yerleþtirilecek - level design
 	- 2. adadaki anahtari almak için gereki sistemler yazýlacak
 	- 3. adadaki kutuyu anahtarla açýp içindeki parþömeni almak için gerekli sistemler yazýlacak
 	- 4. adadaki kaleye girmek için gerekli sistemler yazýlacak
 
 
-OYUNUN TÜM SESLERÝ BULUNUP EKLENECEK
+(1-1 gün) OYUNUN TÜM SESLERÝ BULUNUP-EKLENECEK - 29.06.2023 baþlangýç
+	- Sesler listelenecek
 
 
-GEMÝ HAREKET SÝSTEMÝ
+(2 gün) GEMÝ HAREKET SÝSTEMÝ - 01.07.2023 baþlangýç
 
 	- Bir tane animasyon parent'i olacak, bir tane code hareketleri için parent'i olacak
 	- A ve D ile sað sol yönleri belirlenecek
@@ -109,7 +110,7 @@ GEMÝ HAREKET SÝSTEMÝ
 	- AC 4 bakýþ açýsý ile adalarý bulmak zor olacaðýndan bir adet pusula eklenmeli.
 
 
-GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ
+(2 gün) GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ - 03.07.2023 baþlangýç
 
 	- Her ada için player baþlangýç noktasý
 	- Her ada için gemi park noktasý
@@ -121,7 +122,12 @@ GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ
 	- Cm yerine varýnca geminin kontrolleri aktif olsun
 
 
-CÝNEMATÝC ANÝMASTONLARI TAMAMLANACAK
+ÜSTTEKÝLERÝN BÝTÝÞ TARÝHÝ -----  - 04.07.2023 AKÞAM
+
+
+
+
+(Son üç gün 3 gün) CÝNEMATÝC ANÝMASTONLARI TAMAMLANACAK ve VÝDEO EDÝTLENECEK
 
 Tüm bunlarýn ardýndan dungeon yapýmýna geçilecek
 

@@ -1,5 +1,4 @@
 using DG.Tweening;
-using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using UnityEngine;
 
@@ -7,16 +6,21 @@ public class PlayerCollect : MonoBehaviour
 {
     public static PlayerCollect ins;
 
+    [Header("Text")]
     public TextMeshProUGUI totalAmmoTxt;
     public TextMeshProUGUI collectTxt;
 
-    [Space(10)]
-
+    [Header("Ammo")]
     public CollectableObj bullet;
     public int bulletIncAmount;
 
     public CollectableObj shipBall;
     public int shipBallIncAmount;
+
+    [Header("HP")]
+    [Range(0f, 1f)]
+    public float eatHpPercent;                          //when player eat, increase his hp "maxHP * eatHpPercent"
+    float eatHPAmount;
 
     private void Awake()
     {
@@ -24,15 +28,17 @@ public class PlayerCollect : MonoBehaviour
     }
     private void Start()
     {
+        eatHPAmount = eatHpPercent * PlayerHP.ins.maxHealth;
+
         UptAmmo(0);
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Bullet"))
+        if (other.CompareTag("Bullet") && PistolController.ins.bullet.ammoAmount < PistolController.ins.maxPocketAmmo)
         {
             Destroy(other.gameObject);
 
-            UptCollectTxt(bulletIncAmount, " Bullet");
+            UptCollectTxt(bulletIncAmount, " Bullet", Color.grey);
 
             UptAmmo(bulletIncAmount);
         }
@@ -42,13 +48,21 @@ public class PlayerCollect : MonoBehaviour
             
             shipBall.ammoAmount += shipBallIncAmount;
 
-            UptCollectTxt(shipBallIncAmount, " Cannon Ball");
+            UptCollectTxt(shipBallIncAmount, " Cannon Ball", Color.grey);
+        }
+        if (other.CompareTag("Eat") && PlayerHP.ins.hp < PlayerHP.ins.maxHealth)
+        {
+            Destroy(other.gameObject);
+
+            PlayerHP.ins.IncreaseHP(eatHPAmount);
+            UptCollectTxt(eatHPAmount, " health", Color.green);
         }
     }
 
-    void UptCollectTxt(int amount, string kind)
+    void UptCollectTxt(float amount, string kind, Color color)
     {
         collectTxt.text = "+ " + amount.ToString() + kind;
+        collectTxt.color = color;
 
         collectTxt.GetComponent<RectTransform>().DOKill();
         collectTxt.GetComponent<CanvasGroup>().DOKill();

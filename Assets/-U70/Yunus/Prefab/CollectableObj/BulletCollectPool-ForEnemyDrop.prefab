@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8499196669416552378}
   - component: {fileID: 7647622861137841553}
   m_Layer: 0
-  m_Name: BulletCollectPool
+  m_Name: BulletCollectPool-ForEnemyDrop
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
