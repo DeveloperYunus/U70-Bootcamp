@@ -83,9 +83,9 @@
 	- Adalara enemyler ve collectableler belli bir sistematik üzerine eklenecek ve oyuncu mermi kontrolü yapmaya zorlanacak
 		+ Player yerden yemek toplayýnca saðlýðý artacak
 		+ Saðlýk fulse yemekleri toplayamayalým, cephane fulse mermileri toplayamayalým. Olduklarý yerde durmaya devam etsinler
-		- Collectableler'e bir shinig vfx'i eklenecek. (Belli olsunlar diye)
+		+ Collectableler'e bir shinig vfx'i eklenecek. (Belli olsunlar diye)
 		
-	- Enemyler, player belli bir alana girdikten sonra ona saldýrmaya baþlayacak
+	- Enemyler, player belli bir alana girdikten sonra ona saldýrmaya baþlayacak - Bu collider enemyholder yerleþtirilecek
 	- Adalardaki tüm triggerlanabilir yada duvar olarak kullanýlacak colliderlar yeleþtirilecek
 		- Adanýn kenarlarýna görünmez duvarlar eklenecek ki player suya düþmesin
 	- Gerekli yerlere proplar yerleþtirilecek - level design
