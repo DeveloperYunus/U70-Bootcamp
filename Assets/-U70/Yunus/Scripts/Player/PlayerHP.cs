@@ -62,11 +62,11 @@ public class PlayerHP : MonoBehaviour
     public void IncreaseHP(float value)
     {
         hp += value;
+        incHPEffect.Play();
 
         if (hp > maxHealth)
         {
             hp = maxHealth;
-            incHPEffect.Play();
         }
 
         hpImage.fillAmount = hp / maxHealth;
