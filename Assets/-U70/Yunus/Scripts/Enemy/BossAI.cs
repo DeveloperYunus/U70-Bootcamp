@@ -56,36 +56,39 @@ public class BossAI : MonoBehaviour
     {
         if (distCheck > 0)
         {
-            distCheck = distanceCheckTime;
-
-            DistCheckPlayer();
-
-            if (canAtk)
+            if (DistCheckPlayer())
             {
-                if (attackCount < whichTimeFireBall)
+                distCheck = distanceCheckTime;
+
+                if (canAtk)
                 {
-                    attackCount++;
-                    FireBallAttack();
-                }
-                else
-                {
-                    attackCount = 0;
-                    CallSkeleton();
+                    if (attackCount < whichTimeFireBall)
+                    {
+                        attackCount++;
+                        FireBallAttack();
+                    }
+                    else
+                    {
+                        attackCount = 0;
+                        CallSkeleton();
+                    }
                 }
             }
-            
         }
         else
             distCheck -= Time.deltaTime;
     }
 
-    void DistCheckPlayer()
+    bool DistCheckPlayer()
     {
         if (Vector3.SqrMagnitude(pcTransform.position - transform.position) < rangeSqr)     //player silahýnýn range deðerinin içerisinde 
         {
             Vector3 horizontalTarget = new(pcTransform.position.x, transform.position.y, pcTransform.position.z);   //bir objeye sadece yatayda bakma kody
             transform.LookAt(horizontalTarget);
+
+            return true;
         }
+        return false;
     }
     void FireBallAttack()
     {

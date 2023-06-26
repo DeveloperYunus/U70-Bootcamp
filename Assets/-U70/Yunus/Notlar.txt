@@ -101,12 +101,12 @@
 (2 gün) GEMÝ HAREKET SÝSTEMÝ - 01.07.2023 baþlangýç
 
 	- Bir tane animasyon parent'i olacak, bir tane code hareketleri için parent'i olacak
-	- A ve D ile sað sol yönleri belirlenecek
-	- geminin 2 ileri 1 geri hýz modu olur - (yelkenler hýz modlarýna göre açýlýp kapanýr)
-		- Geri vites 1 birim hýzýnda
-		- Boþta, hareket yok
-		- Ýleri vites 1.5 birim hýzýnda
-		- Ýleri hýzlý vites 3 birim hýzýnda
+	+ A ve D ile sað sol yönleri belirlenecek
+	+ geminin 2 ileri 1 geri hýz modu olur - (yelkenler hýz modlarýna göre açýlýp kapanýr)
+		+ Geri vites 1 birim hýzýnda
+		+ Boþta, hareket yok
+		+ Ýleri vites 1.5 birim hýzýnda
+		+ Ýleri hýzlý vites 3 birim hýzýnda
 	- AC 4 bakýþ açýsý ile adalarý bulmak zor olacaðýndan bir adet pusula eklenmeli.
 
 
