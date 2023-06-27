@@ -25,6 +25,10 @@ public class ShipController : MonoBehaviour
     public float sailUpTime;
     public float sailDownTime;
 
+    private void Awake()
+    {
+        ins = this;
+    }
     void Start()
     {
         //canShipMove = false;
@@ -40,6 +44,10 @@ public class ShipController : MonoBehaviour
         {
             ControlShip();
         }
+    }
+    private void LateUpdate()
+    {
+        SetSpeed();
     }
 
 
@@ -62,8 +70,6 @@ public class ShipController : MonoBehaviour
         {
             transform.Rotate(rotateSpeed * Time.deltaTime * -Vector3.up);
         }
-
-        SetSpeed();
     }
     void SetShipSpeedLevel(int value)
     {
@@ -121,8 +127,6 @@ public class ShipController : MonoBehaviour
                 SetSailScale(sailBack, false);
                 break;
         }
-
-        SetSpeed();
     }
 
     void SetSailScale(Transform sail, bool up)      //up true ise yelkenler açýlýr

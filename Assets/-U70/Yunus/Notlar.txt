@@ -78,7 +78,7 @@
 
 	2. KISIM YAPILACAKLAR
 
-(5 gün) ADA OYNANIÞI TAMAMEN BÝTÝRÝLECEK - 24.06.2023 baþlangýç
+(5 gün) ADA OYNANIÞI TAMAMEN BÝTÝRÝLECEK
 
 	- Adalara enemyler ve collectableler belli bir sistematik üzerine eklenecek ve oyuncu mermi kontrolü yapmaya zorlanacak
 		+ Player yerden yemek toplayýnca saðlýðý artacak
@@ -94,23 +94,19 @@
 	- 4. adadaki kaleye girmek için gerekli sistemler yazýlacak
 
 
-(1-1 gün) OYUNUN TÜM SESLERÝ BULUNUP-EKLENECEK - 29.06.2023 baþlangýç
-	- Sesler listelenecek
+(2 gün tahmini) GEMÝ HAREKET SÝSTEMÝ - 26.06.2023 baþlangýç - Bitiþ 27.06.2023 (1 gün sürdü)
 
-
-(2 gün) GEMÝ HAREKET SÝSTEMÝ - 01.07.2023 baþlangýç
-
-	- Bir tane animasyon parent'i olacak, bir tane code hareketleri için parent'i olacak
+	+ Bir tane animasyon parent'i olacak, bir tane code hareketleri için parent'i olacak
 	+ A ve D ile sað sol yönleri belirlenecek
 	+ geminin 2 ileri 1 geri hýz modu olur - (yelkenler hýz modlarýna göre açýlýp kapanýr)
 		+ Geri vites 1 birim hýzýnda
 		+ Boþta, hareket yok
 		+ Ýleri vites 1.5 birim hýzýnda
 		+ Ýleri hýzlý vites 3 birim hýzýnda
-	- AC 4 bakýþ açýsý ile adalarý bulmak zor olacaðýndan bir adet pusula eklenmeli.
+	+ AC 4 bakýþ açýsý ile adalarý bulmak zor olacaðýndan bir adet pusula eklenmeli.
 
 
-(2 gün) GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ - 03.07.2023 baþlangýç
+(2 gün) GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ
 
 	- Her ada için player baþlangýç noktasý
 	- Her ada için gemi park noktasý
@@ -118,19 +114,21 @@
 	- Gemi park noktasýna girdikten sonra gemi cm deaktif olur ve camera  belli bir süre sonra player cm ye gelir 
 	- Camera hareketi tamamlandýktan sonra bizim silah yavaþça aþaðýdan yukarý çýkar ve animasyon tamamlanýnca yürüme ve hareket etme deðiþkenimiz true olur, macera baþlar
 
-	- Gemiye geri dönmek için sahildeki iskeleye gidelime tuþu gözüksün basýnca ellerimiz aþaðýya insin ardýndan geminin cm'si aktif olsun 
+	- Gemiye geri dönmek için sahildeki iskeleye gidelim e tuþu gözüksün basýnca player controlleri deaktif olsun, ellerimiz aþaðýya insin ardýndan geminin cm'si aktif olsun 
 	- Cm yerine varýnca geminin kontrolleri aktif olsun
 
 
-ÜSTTEKÝLERÝN BÝTÝÞ TARÝHÝ -----  - 04.07.2023 AKÞAM
+(1-1 gün) OYUNUN TÜM SESLERÝ BULUNACAK-EKLENECEK
+	- Sesler listelenecek
+
+ÜSTTEKÝLERÝN BÝTÝÞ TARÝHÝ ----- 04.07.2023 AKÞAM
 
 
 
-
-(Son üç gün 3 gün) CÝNEMATÝC ANÝMASTONLARI TAMAMLANACAK ve VÝDEO EDÝTLENECEK
 
 Tüm bunlarýn ardýndan dungeon yapýmýna geçilecek
 
+(Son üç gün 3 gün) CÝNEMATÝC ANÝMASYONLARI TAMAMLANACAK ve VÝDEO EDÝTLENECEK
 
 
 
