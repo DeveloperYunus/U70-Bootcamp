@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - ShipBall
   - Eat
+  - Ship
   layers:
   - Default
   - TransparentFX

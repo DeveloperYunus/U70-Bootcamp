@@ -106,16 +106,17 @@
 	+ AC 4 bakýþ açýsý ile adalarý bulmak zor olacaðýndan bir adet pusula eklenmeli.
 
 
-(2 gün) GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ
+(2 gün) GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ - 28.06.2023 baþlangýç - Bitiþ  28.06.2023 (1 gün sürdü)
 
-	- Her ada için player baþlangýç noktasý
-	- Her ada için gemi park noktasý
-	- Gemi collidera girdikren sonra ekranda e tuþu gözükür tuþa basarsak gemi yavaþca park noktasýna gelir
-	- Gemi park noktasýna girdikten sonra gemi cm deaktif olur ve camera  belli bir süre sonra player cm ye gelir 
-	- Camera hareketi tamamlandýktan sonra bizim silah yavaþça aþaðýdan yukarý çýkar ve animasyon tamamlanýnca yürüme ve hareket etme deðiþkenimiz true olur, macera baþlar
+	+ Her ada için player baþlangýç noktasý
+	+ Her ada için gemi park noktasý
+	+ Gemi collidera girdikren sonra ekranda e tuþu gözükür tuþa basarsak gemi yavaþca park noktasýna gelir
+	+ Gemi park noktasýna girdikten sonra gemi cm deaktif olur ve camera  belli bir süre sonra player cm ye gelir 
+	+ Camera hareketi tamamlandýktan sonra bizim silah yavaþça aþaðýdan yukarý çýkar ve animasyon tamamlanýnca yürüme ve hareket etme deðiþkenimiz true olur, macera baþlar
 
-	- Gemiye geri dönmek için sahildeki iskeleye gidelim e tuþu gözüksün basýnca player controlleri deaktif olsun, ellerimiz aþaðýya insin ardýndan geminin cm'si aktif olsun 
-	- Cm yerine varýnca geminin kontrolleri aktif olsun
+	+ Gemiye geri dönmek için sahildeki iskeleye gidelim e tuþu gözüksün basýnca player controlleri deaktif olsun, ellerimiz aþaðýya insin ardýndan geminin cm'si aktif olsun 
+	+ Cm yerine varýnca geminin kontrolleri aktif olsun
+	- Cilala, göze güzel gözüksün
 
 
 (1-1 gün) OYUNUN TÜM SESLERÝ BULUNACAK-EKLENECEK

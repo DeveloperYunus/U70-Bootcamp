@@ -1664,13 +1664,14 @@ GameObject:
   m_Component:
   - component: {fileID: 283915859385004534}
   - component: {fileID: 7446647148302706457}
+  - component: {fileID: 1181282988}
   m_Layer: 5
   m_Name: PlayerPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &283915859385004534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1704,6 +1705,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469843795891121486}
   m_CullTransparentMesh: 1
+--- !u!225 &1181282988
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469843795891121486}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1230952644158938674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,13 +1727,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1156146847065967574}
   - component: {fileID: 3991509472396866087}
+  - component: {fileID: 1506180428}
   m_Layer: 5
   m_Name: ShipPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1156146847065967574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1730,8 +1744,8 @@ RectTransform:
   m_GameObject: {fileID: 1230952644158938674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 29708139}
   m_Father: {fileID: 442396853590932270}
@@ -1750,6 +1764,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230952644158938674}
   m_CullTransparentMesh: 1
+--- !u!225 &1506180428
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230952644158938674}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1499129369637825609
 GameObject:
   m_ObjectHideFlags: 0

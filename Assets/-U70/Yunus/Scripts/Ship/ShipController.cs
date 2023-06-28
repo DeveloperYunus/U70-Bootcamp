@@ -8,7 +8,7 @@ public class ShipController : MonoBehaviour
     public bool canShipMove;
     int shipSpeedLvl;       //ship level -1, 0, 1, 2
 
-    Rigidbody rb;
+    public Rigidbody rb;
 
     [Header("Ship Controller")]
     public float moveSpeed;
@@ -31,8 +31,10 @@ public class ShipController : MonoBehaviour
     }
     void Start()
     {
-        //canShipMove = false;
+        canShipMove = false;
         rb = GetComponent<Rigidbody>();
+
+        shipSpeedLvl = 0;
 
         SetSailScale(sailBack, false);
         SetSailScale(sailMiddle, false);
@@ -44,9 +46,7 @@ public class ShipController : MonoBehaviour
         {
             ControlShip();
         }
-    }
-    private void LateUpdate()
-    {
+
         SetSpeed();
     }
 
@@ -145,5 +145,10 @@ public class ShipController : MonoBehaviour
     void SetSpeed()
     {
         rb.velocity = Vector3.Lerp(rb.velocity, transform.right * _moveSpeed, speedChangeTime);
+    }
+
+    public void AnchorTheShip()
+    {
+        rb.velocity = Vector3.zero;
     }
 }

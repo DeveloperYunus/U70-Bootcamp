@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CompassArrow : MonoBehaviour
 {
+    public Transform mainCamera;
     Transform shipTransform;
     public Transform targetTransform;
 
@@ -9,6 +10,7 @@ public class CompassArrow : MonoBehaviour
 
     void Start()
     {
+        //mainCamera = Camera.main.transform;
         shipTransform = GetComponent<Transform>();
     }
     private void FixedUpdate()
@@ -18,11 +20,14 @@ public class CompassArrow : MonoBehaviour
 
     void FindAngleFromZ()
     {
-        Vector3 direction = targetTransform.position - shipTransform.position;
-        direction.y = 0;
+        if (targetTransform)
+        {
+            Vector3 direction = targetTransform.position - shipTransform.position;
+            direction.y = 0;
 
-        float angle = Vector3.SignedAngle(shipTransform.right, direction, Vector3.down);
+            float angle = Vector3.SignedAngle(Vector3.right, direction, Vector3.down);
 
-        compass.localEulerAngles = new(compass.localEulerAngles.x, compass.localEulerAngles.y, angle);
+            compass.localEulerAngles = new(0, 0, angle + mainCamera.eulerAngles.y - 90);
+        }
     }
 }
