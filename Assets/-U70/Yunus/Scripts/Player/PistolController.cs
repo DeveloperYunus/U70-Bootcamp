@@ -1,9 +1,7 @@
 using Cinemachine;
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PistolController : MonoBehaviour
 {

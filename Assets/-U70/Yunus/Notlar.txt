@@ -85,10 +85,9 @@
 		+ Saðlýk fulse yemekleri toplayamayalým, cephane fulse mermileri toplayamayalým. Olduklarý yerde durmaya devam etsinler
 		+ Collectableler'e bir shinig vfx'i eklenecek. (Belli olsunlar diye)
 		
-	- Enemyler, player belli bir alana girdikten sonra ona saldýrmaya baþlayacak - Bu collider enemyholder yerleþtirilecek
+	- Enemyler, player belli bir alana girdikten sonra ona saldýrmaya baþlayacak - Bu collider enemyholder'a yerleþtirilecek
 	- Adalardaki tüm triggerlanabilir yada duvar olarak kullanýlacak colliderlar yeleþtirilecek
 		- Adanýn kenarlarýna görünmez duvarlar eklenecek ki player suya düþmesin
-	- Gerekli yerlere proplar yerleþtirilecek - level design
 	- 2. adadaki anahtari almak için gereki sistemler yazýlacak
 	- 3. adadaki kutuyu anahtarla açýp içindeki parþömeni almak için gerekli sistemler yazýlacak
 	- 4. adadaki kaleye girmek için gerekli sistemler yazýlacak
@@ -106,7 +105,7 @@
 	+ AC 4 bakýþ açýsý ile adalarý bulmak zor olacaðýndan bir adet pusula eklenmeli.
 
 
-(2 gün) GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ - 28.06.2023 baþlangýç - Bitiþ  28.06.2023 (1 gün sürdü)
+(2 gün) GEMÝDEN ADAYA ÝNÝÞ ve GEMÝYE GERÝ DÖNÜÞ - 28.06.2023 baþlangýç - Bitiþ  30.06.2023 (3 gün sürdü)
 
 	+ Her ada için player baþlangýç noktasý
 	+ Her ada için gemi park noktasý
@@ -116,7 +115,12 @@
 
 	+ Gemiye geri dönmek için sahildeki iskeleye gidelim e tuþu gözüksün basýnca player controlleri deaktif olsun, ellerimiz aþaðýya insin ardýndan geminin cm'si aktif olsun 
 	+ Cm yerine varýnca geminin kontrolleri aktif olsun
-	- Cilala, göze güzel gözüksün
+
+	+ Cilala, göze güzel gözüksün
+		+ Gemiye binerken silahlar aþaðý insin sonra geminin cm'si aktif olsun
+		+ Gemideyken "E" tuþu daha büyük gözüksün
+		+ GameplayCgange'de player için bir baþlangýç noktasý olsun, gemiden inince player o noktadan baþlasýn
+		+ Gemiye binince player'ýn hýzý sýfýrlansýn
 
 
 (1-1 gün) OYUNUN TÜM SESLERÝ BULUNACAK-EKLENECEK

@@ -132,7 +132,14 @@ namespace StarterAssets
 				CameraRotation();
 			}
 		}
-
+		/// <summary>
+		/// --- Yunus --- isAlive = false, _input.move = Vector2.zero. Player gemiye bindiği zaman hıznı sıfırlar ve hareket edebilir özelliğini kapatır 
+		/// </summary>
+		public void StopSpeed()	//yunus
+		{
+			isAlive = false;
+			_input.move = Vector2.zero;
+        }
 		private void GroundedCheck()
 		{
 			// set sphere position, with offset
