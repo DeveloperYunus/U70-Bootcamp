@@ -113,6 +113,7 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 <img width="783" alt="Oyun_3" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductSituation3.png">
 <img width="783" alt="Oyun_4" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductSituation4.png">
 <img width="783" alt="Oyun_5" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductSituation5.png">
+<img width="783" alt="Oyun_5" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductSituation6.png">
 
 **Sprint Review**:
 - Genel terrain, adaların terraini ve adaların ek level tasarımları tamamlandı, adalara proplar eklendi
