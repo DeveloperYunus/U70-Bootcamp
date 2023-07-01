@@ -83,3 +83,38 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint Retrospective:**
 - İlk Sprint'te oyun fikrini belirleme konusunda fazla zaman kaybedildi, fikir ayrılıkları yaşandı. Fakat sonrasında ortak bir karara varılabildi ve sonraki Sprintlerde daha sonuç odaklı ve pratik adımlar atılmasına karar verildi.
+
+---
+
+# Sprint 2
+
+**Sprint Notları**: Toplantı notları ve puanlar backlog itemların açıklama kısmına eklendi.
+
+**1. Sprintte tamamalan puan**: 60 (çeşitli sebeplerden ötürü gerçekleştirilemeyen görevler yüzünden hedeşlenen -120- puana ulaşılamamıştır)
+
+**Sprint içinde tamamlanması tahmin edilen puan**: Sprintte tamamlanması gereken 120 birim puan bulunmaktadır. (Projenin toplam puan maliyeti 300 birmdir)
+
+**Puan tamamlama mantığı**: 1. Sprintteki -60 puanı telafi etmek için hem fazladan 20 puan eklenmiş hemde kapsamda daralmaya gidilmiştir.
+
+**Backlog Düzeni**: Backloglarımız projenin tüm ana mekaniklerinin ve seviye tasarımalrının tamamlaması ve sprint sonunda oynanabilir bir oyun oluşması yönündedir. (terrain ile adaların yapılması ve ek level tasarımlarının bitirlmesi, enemy AI, boss AI, player movement-attack, gemi movement ve player ada-gemi oynanış geçiş sistemlerinin tamamlanması)
+
+**Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü bu sprintte tam anlamıyla yapılamadı ancak olabildiğince sık Discord ve WhatsApp üzerinden iletişime geçildi ve toplantılar düzenlendi.
+Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
+
+**Sprint board update**: Sprint board Ekran görüntüsü:
+
+<img width="1138" alt="SprintBoard" src="https://github.com/seymamelisagunay/u70/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202023-06-19%20132033.png">
+
+**Ürün Durumu**: Ekran görüntüleri:
+
+<img width="1095" alt="Oyun_1" src="https://github.com/seymamelisagunay/u70/assets/86656894/3c6a45c8-5c00-42ff-aba0-262224d12d81">
+<img width="783" alt="Oyun_2" src="https://github.com/seymamelisagunay/u70/assets/86656894/0b26fdb2-15f6-42f4-b683-a2cf358a4587">
+
+**Sprint Review**:
+- Araştırma, fikir bulma ve geliştirmeye yönelik planlanan bu sprintte projeye dair pek çok konu kararlaştırıldı.
+- Planlandığı şekilde bu sprintte sahne ve mekaniğe yönelik temel çalışmalar yapıldı
+- Bir üye ekipten ayrıldı
+
+**Sprint Retrospective:**
+- İlk Sprint'te oyun fikrini belirleme konusunda fazla zaman kaybedildi, fikir ayrılıkları yaşandı. Fakat sonrasında ortak bir karara varılabildi ve sonraki Sprintlerde daha sonuç odaklı ve pratik adımlar atılmasına karar verildi.
+
