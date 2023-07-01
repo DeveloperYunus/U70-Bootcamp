@@ -99,6 +99,7 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 **Backlog Düzeni**: Backloglarımız projenin tüm ana mekaniklerinin ve seviye tasarımalrının tamamlaması ve sprint sonunda oynanabilir bir oyun oluşması yönündedir. (terrain ile adaların yapılması ve ek level tasarımlarının bitirlmesi, enemy AI, boss AI, player movement-attack, gemi movement ve player ada-gemi oynanış geçiş sistemlerinin tamamlanması)
 
 **Daily Scrum**: Ekipteki üye sayısın hatırı sayılır ölçüde azalmasından daily scrum toplantıları günlük watsapp üzerinden metin iletişimi ve 2 günde bir discord üzerinden genel fikir alışverişi yapılarak gerçekleştirilmiştir.
+
 Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint board update**: Sprint board Ekran görüntüsü:
