@@ -103,13 +103,15 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint board update**: Sprint board Ekran görüntüsü:
 
-<img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/Sprint2_Kanban1.png">
-<img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/Sprint2_Kanban2.png">
+<img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_Kanban1.png">
+<img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_Kanban2.png">
 
 **Ürün Durumu**: Ekran görüntüleri:
 
-<img width="1095" alt="Oyun_1" src="">
-<img width="783" alt="Oyun_2" src="">
+<img width="1095" alt="Oyun_1" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductStuation1.png">
+<img width="783" alt="Oyun_2" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductSituation2.png">
+<img width="783" alt="Oyun_2" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductSituation3.png">
+<img width="783" alt="Oyun_2" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint2_ProductSituation4.png">
 
 **Sprint Review**:
 - Genel terrain, adaların terraini ve adaların ek level tasarımları tamamlandı, adalara proplar eklendi
