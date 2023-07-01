@@ -98,23 +98,23 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Backlog Düzeni**: Backloglarımız projenin tüm ana mekaniklerinin ve seviye tasarımalrının tamamlaması ve sprint sonunda oynanabilir bir oyun oluşması yönündedir. (terrain ile adaların yapılması ve ek level tasarımlarının bitirlmesi, enemy AI, boss AI, player movement-attack, gemi movement ve player ada-gemi oynanış geçiş sistemlerinin tamamlanması)
 
-**Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü bu sprintte tam anlamıyla yapılamadı ancak olabildiğince sık Discord ve WhatsApp üzerinden iletişime geçildi ve toplantılar düzenlendi.
+**Daily Scrum**: Ekipteki üye sayısın hatırı sayılır ölçüde azalmasından daily scrum toplantıları günlük watsapp üzerinden metin iletişimi ve 2 günde bir discord üzerinden genel fikir alışverişi yapılarak gerçekleştirilmiştir.
 Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint board update**: Sprint board Ekran görüntüsü:
 
-<img width="1138" alt="SprintBoard" src="https://github.com/seymamelisagunay/u70/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202023-06-19%20132033.png">
+<img width="1138" alt="SprintBoard" src="">
 
 **Ürün Durumu**: Ekran görüntüleri:
 
-<img width="1095" alt="Oyun_1" src="https://github.com/seymamelisagunay/u70/assets/86656894/3c6a45c8-5c00-42ff-aba0-262224d12d81">
-<img width="783" alt="Oyun_2" src="https://github.com/seymamelisagunay/u70/assets/86656894/0b26fdb2-15f6-42f4-b683-a2cf358a4587">
+<img width="1095" alt="Oyun_1" src="">
+<img width="783" alt="Oyun_2" src="">
 
 **Sprint Review**:
-- Araştırma, fikir bulma ve geliştirmeye yönelik planlanan bu sprintte projeye dair pek çok konu kararlaştırıldı.
-- Planlandığı şekilde bu sprintte sahne ve mekaniğe yönelik temel çalışmalar yapıldı
-- Bir üye ekipten ayrıldı
+- Genel terrain, adaların terraini ve adaların ek level tasarımları tamamlandı, adalara proplar eklendi
+- Player move-attack, ship move, player-ship transition ve düşman (iskelet ve büyücü korsan kaptan) AI ve saldırır sistemleri tamamlandı.
+- 1. Sprintte ayrılan üyeye ek diğer iki takım arkadaşıda şimdiye kadar (2. sprint'in sonuna kadar) hiç eylemde bulunmadığı için takımdan ayrıldıkları varsayılıyor.
 
 **Sprint Retrospective:**
-- İlk Sprint'te oyun fikrini belirleme konusunda fazla zaman kaybedildi, fikir ayrılıkları yaşandı. Fakat sonrasında ortak bir karara varılabildi ve sonraki Sprintlerde daha sonuç odaklı ve pratik adımlar atılmasına karar verildi.
+- Sprintin başında kararlaştırılan ilerlemeye ulaşılamadı (iş gücünün azalmasından dolayı). 3. sprint için ilk hafta oyunun tamamen bitirilmesi gerekmekte. Bunun için kapsamda daralmaya gidildi. Son hafta ile oyun test edilecek ve video çekilecek.
 
