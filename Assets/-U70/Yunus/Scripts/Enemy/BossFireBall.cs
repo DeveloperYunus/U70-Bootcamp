@@ -28,9 +28,17 @@ public class BossFireBall : MonoBehaviour
     void StopFireball()
     {
         coll.enabled = false;
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().velocity = -GetComponent<Rigidbody>().velocity;
         fireBallVFX.Stop();
         fireBallExpVFX.Play();
+
+        Invoke(nameof(StopSpeed), 0.04f);
         Destroy(gameObject, dieTime);
+    }
+
+    void StopSpeed()
+    {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+
     }
 }

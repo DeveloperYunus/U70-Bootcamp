@@ -5380,8 +5380,8 @@ Transform:
   m_GameObject: {fileID: 727291681264992177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 70.19, y: 6.432, z: 84.28}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 981048678079338796}
   - {fileID: 727291682119229202}
@@ -5436,7 +5436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireball: {fileID: 5803185869231727824, guid: 88c17e86bfb8ccc4da2f381ea3a84f17, type: 3}
   fireBallDamage: 15
-  fireballSpeed: 3
+  fireballSpeed: 2.5
   muzzleHand: {fileID: 727291681022064494}
   childTransform: {fileID: 981048678079338796}
   distanceCheckTime: 0.5

@@ -101,7 +101,7 @@ public class BossAI : MonoBehaviour
     }
     void InsFireBall()
     {
-        Vector3 direction = pcTransform.position - muzzleHand.position + new Vector3(0, 1f, 0);
+        Vector3 direction = pcTransform.position - muzzleHand.position + new Vector3(0, 3.5f, 0);
         GameObject a = Instantiate(fireball, muzzleHand.position, Quaternion.identity);
 
         a.GetComponent<Rigidbody>().velocity = direction * fireballSpeed;

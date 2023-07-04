@@ -90,15 +90,18 @@ public class PistolController : MonoBehaviour
 
         if (!isFrontWall)        //pistol duvarýn içinde deðil
         {
-            pistolObj.position = Vector3.Lerp(pistolObj.position, followPivot.position, Time.deltaTime * followSpeed);
-            pistolObj.rotation = Quaternion.Lerp(pistolObj.rotation, followPivot.rotation, Time.deltaTime * followSpeed);
+            Vector3 pos = Vector3.Lerp(pistolObj.position, followPivot.position, Time.deltaTime * followSpeed);
+            Quaternion euler = Quaternion.Lerp(pistolObj.rotation, followPivot.rotation, Time.deltaTime * followSpeed);
+
+            pistolObj.SetPositionAndRotation(pos, euler);
         }
         else
         {
-            pistolObj.position = Vector3.Lerp(pistolObj.position, followPivot.position, Time.deltaTime * followSpeed);
-            pistolObj.rotation = Quaternion.Lerp(pistolObj.rotation,
-                followPivot.rotation * Quaternion.Euler(followPivot.rotation.x + 5, followPivot.rotation.y - 80, followPivot.rotation.z),
-                Time.deltaTime * followSpeed * 0.3f);
+            Vector3 pos = Vector3.Lerp(pistolObj.position, followPivot.position, Time.deltaTime * followSpeed);
+            Quaternion euler = Quaternion.Lerp(pistolObj.rotation, followPivot.rotation * Quaternion.Euler(followPivot.rotation.x + 5, followPivot.rotation.y - 80,
+                               followPivot.rotation.z), Time.deltaTime * followSpeed * 0.3f);
+
+            pistolObj.SetPositionAndRotation(pos, euler);
         }
     }
 
