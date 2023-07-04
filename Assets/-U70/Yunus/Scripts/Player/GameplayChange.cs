@@ -73,7 +73,7 @@ public class GameplayChange : MonoBehaviour
         {
             ShowEImage(true);
         }
-        else if (!isModeWalk)
+        else if (other.CompareTag("Ship") && !isModeWalk)
         {
             ShowEImage(false);
         }
