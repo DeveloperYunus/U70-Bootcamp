@@ -2,25 +2,24 @@ using Cinemachine;
 using DG.Tweening;
 using StarterAssets;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.InputSystem.XR;
 
 
 public class GameplayChange : MonoBehaviour
 {
-    public static GameplayChange ins;
-
-    [HideInInspector] public bool isModeWalk;                           //true ise player zeminde pistol ile koþuyor demektir, false ise gemi ile geziyor demektir
+    [HideInInspector] public static bool isModeWalk;                           //true ise player zeminde pistol ile koþuyor demektir, false ise gemi ile geziyor demektir
 
 
     [Header("--- Player Data ---")]
     public GameObject playerPistol;
     public GameObject playerCm;
+    public CharacterController chController;
     public FirstPersonController playerCapsule;
     public RectTransform playerPanel;
+    public Transform pistolForShipMove;
 
     [Space(10)]
     public Transform playerStartPos;
-    public Transform pistolForShipMove;
     public float downPistolDuration;
 
 
@@ -34,14 +33,10 @@ public class GameplayChange : MonoBehaviour
 
     [Header("--- E Image ---")]
     public CanvasGroup eImage;
-    bool isEKeyActive;
-    bool eKeyTimer;                                     // e key'i cinemachine'in bir kameradan diðerine geçene kadar tekrar aktif olmaz
+    public static bool isEKeyActive;
+    public static bool eKeyTimer;                                     // e key'i cinemachine'in bir kameradan diðerine geçene kadar tekrar aktif olmaz
 
 
-    private void Awake()
-    {
-        ins = this;
-    }
     private void Start()
     {
         isModeWalk = true;
@@ -69,6 +64,8 @@ public class GameplayChange : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
+        print(gameObject.name);
+
         if (other.CompareTag("Ship") && shipController.rb.velocity.magnitude < 1f && !isModeWalk)
         {
             ShowEImage(true);
@@ -81,7 +78,7 @@ public class GameplayChange : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player") || other.CompareTag("Ship"))
-        {            
+        {
             ShowEImage(false);
         }
     }
@@ -128,6 +125,9 @@ public class GameplayChange : MonoBehaviour
     {
         pistolForShipMove.DOLocalRotate(new Vector3(54, 0, 0), downPistolDuration);
         playerCapsule.StopSpeed();
+        chController.enabled = false;
+
+        //isModeWalk = false;                                                         //bunu yazmayýnca isModeWalk deðiþkeni chController kapatýldýðý için colliderdan çýktý saýlýp true yapýlýyor
 
         Invoke(nameof(ShowShipInvoke), 1);
     }
@@ -158,6 +158,7 @@ public class GameplayChange : MonoBehaviour
 
         playerCm.SetActive(true);
         playerCapsule.StopSpeed();
+        chController.enabled = true;
 
         shipCm.SetActive(false);
         shipController.canShipMove = false;
@@ -188,7 +189,7 @@ public class GameplayChange : MonoBehaviour
 
     void SetPlayerLocation()
     {
-        Vector3 posXZ = new(playerStartPos.position.x, playerCapsule.transform.position.y, playerStartPos.position.z);
+        Vector3 posXZ = new(this.playerStartPos.position.x, playerCapsule.transform.position.y, playerStartPos.position.z);
 
         playerCapsule.transform.DOMove(posXZ, cmBrain.m_DefaultBlend.m_Time);
     }
