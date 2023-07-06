@@ -80,4 +80,12 @@ public class PlayerHP : MonoBehaviour
 
         UIController.ins.YouDied();
     }
+    public void Resurrect()//player'ý canlandýr
+    {
+        IncreaseHP(maxHealth);
+        isAlive = true;
+        GetComponent<FirstPersonController>().isAlive = true;
+
+        UIController.ins.Resurrect();
+    }
 }

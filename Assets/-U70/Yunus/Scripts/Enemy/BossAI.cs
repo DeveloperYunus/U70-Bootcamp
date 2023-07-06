@@ -13,6 +13,7 @@ public class BossAI : MonoBehaviour
     public Transform childTransform;                            //animasyondan dolayý
     public float distanceCheckTime;
     public float atkSpeedFireBall;
+    public float fireBallYHeight;                               //Fireball player ýn ne kadar yukarýsýna gönderilecek
 
     float range;                                                // bu range player pistol daki range ile ayný yoksa ikisinden birir menzil avantajý kazanmýþ olurdu
     float distCheck;
@@ -101,7 +102,7 @@ public class BossAI : MonoBehaviour
     }
     void InsFireBall()
     {
-        Vector3 direction = pcTransform.position - muzzleHand.position + new Vector3(0, 3.5f, 0);
+        Vector3 direction = pcTransform.position - muzzleHand.position + new Vector3(0, fireBallYHeight, 0);
         GameObject a = Instantiate(fireball, muzzleHand.position, Quaternion.identity);
 
         a.GetComponent<Rigidbody>().velocity = direction * fireballSpeed;

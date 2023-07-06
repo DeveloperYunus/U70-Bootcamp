@@ -47,6 +47,14 @@ public class UIController : MonoBehaviour
         diedTxt.GetComponent<CanvasGroup>().DOFade(1, txtFadeUptime).SetDelay(pnlFadeUptime + 0.5f);
         diedTxt.DOScale(1.1f, txtFadeUptime).SetDelay(pnlFadeUptime+0.5f);
     }
+    public void Resurrect()
+    {
+        deadPanel.DOScale(0, 0).SetDelay(pnlFadeUptime);
+        deadPanel.GetComponent<CanvasGroup>().DOFade(0, pnlFadeUptime);
+
+        diedTxt.GetComponent<CanvasGroup>().DOFade(0, txtFadeUptime).SetDelay(pnlFadeUptime + 0.5f);
+        diedTxt.DOScale(0f, 0).SetDelay(2 * pnlFadeUptime + 0.5f);
+    }
     public void ResetGameBtn()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
