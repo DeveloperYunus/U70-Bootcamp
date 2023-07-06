@@ -22459,7 +22459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 426420256241396741}
   m_Layer: 0
-  m_Name: PitatePistol-ForGetInShipMove
+  m_Name: PiratePistol-ForGetInShipMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22699,7 +22699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173157857957914319, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.049990468
+      value: 0.050009698
       objectReference: {fileID: 0}
     - target: {fileID: 4173157857957914319, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22707,7 +22707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173157857957914319, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5199758
+      value: 0.5200088
       objectReference: {fileID: 0}
     - target: {fileID: 4173157857957914319, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
       propertyPath: m_LocalRotation.w

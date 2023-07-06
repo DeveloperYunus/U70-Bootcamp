@@ -107,6 +107,7 @@ public class ShipController : MonoBehaviour
                 _moveSpeed = moveSpeed * 2;
 
                 SetSailScale(sailFront, true);
+                SetSailScale(sailMiddle, true);
                 SetSailScale(sailBack, true);
                 break;
 

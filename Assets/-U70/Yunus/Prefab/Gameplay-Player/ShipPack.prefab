@@ -1386,9 +1386,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canShipMove: 1
   rb: {fileID: 0}
-  moveSpeed: 11
-  speedChangeTime: 0.003
-  rotateSpeed: 25
+  moveSpeed: 10
+  speedChangeTime: 0.01
+  rotateSpeed: 18
   sailFront: {fileID: 459579361549505890}
   sailMiddle: {fileID: 459579361712636234}
   sailBack: {fileID: 459579362721957469}

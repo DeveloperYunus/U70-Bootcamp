@@ -2,11 +2,12 @@ using Cinemachine;
 using DG.Tweening;
 using StarterAssets;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 
 
 public class GameplayChange : MonoBehaviour
 {
+    public static GameplayChange ins;
+
     [HideInInspector] public static bool isModeWalk;                           //true ise player zeminde pistol ile koþuyor demektir, false ise gemi ile geziyor demektir
 
 
@@ -18,11 +19,6 @@ public class GameplayChange : MonoBehaviour
     public RectTransform playerPanel;
     public Transform pistolForShipMove;
 
-    [Space(10)]
-    public Transform playerStartPos;
-    public float downPistolDuration;
-
-
     [Header("--- Ship Data ---")]
     public GameObject shipCm;
     public ShipController shipController;
@@ -31,12 +27,27 @@ public class GameplayChange : MonoBehaviour
     [Space(10)]
     public CinemachineBrain cmBrain;
 
-    [Header("--- E Image ---")]
-    public CanvasGroup eImage;
+    [Header("--- E Image Scale ---")]
+    public float playerScale = 1;
+    public float shipScale = 7;
+
+
+    [Header("--- Collider Data ---")]
+    public static CanvasGroup eImage;
+    public static Transform playerStartPos;
+    public float downPistolDuration;
+
     public static bool isEKeyActive;
     public static bool eKeyTimer;                                     // e key'i cinemachine'in bir kameradan diðerine geçene kadar tekrar aktif olmaz
 
 
+    private void Awake()
+    {
+        ins = this;
+
+        playerScale = 1;
+        shipScale = 7;
+    }
     private void Start()
     {
         isModeWalk = true;
@@ -50,39 +61,15 @@ public class GameplayChange : MonoBehaviour
     }
     private void Update()
     {
+
         if (isEKeyActive && Input.GetKeyDown(KeyCode.E) && eKeyTimer)
         {
             ChangePlayMode();
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            ShowEImage(true);
-        }   
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        print(gameObject.name);
 
-        if (other.CompareTag("Ship") && shipController.rb.velocity.magnitude < 1f && !isModeWalk)
-        {
-            ShowEImage(true);
-        }
-        else if (other.CompareTag("Ship") && !isModeWalk)
-        {
-            ShowEImage(false);
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player") || other.CompareTag("Ship"))
-        {
-            ShowEImage(false);
-        }
-    }
-    void ShowEImage(bool showing)
+
+    public void ShowEImage(bool showing)
     {
         if (showing)
         {
@@ -97,9 +84,10 @@ public class GameplayChange : MonoBehaviour
             eImage.DOFade(0, 1f);
         }
     }
-
-
-
+    public void SetEImageScale(float scale)
+    {
+        eImage.GetComponent<RectTransform>().DOScale(scale, 0);
+    }
     public void ChangePlayMode()
     {
         if (isModeWalk)     //gemiyi aktif et
@@ -133,7 +121,7 @@ public class GameplayChange : MonoBehaviour
     }
     void ShowShipInvoke()
     {
-        SetEKeyScale(7);
+        SetEKeyScale(shipScale);
 
         playerCm.SetActive(false);
         playerPistol.SetActive(false);
@@ -153,7 +141,7 @@ public class GameplayChange : MonoBehaviour
 
     void ShowPlayer()
     {
-        SetEKeyScale(1);
+        SetEKeyScale(playerScale);
         SetPlayerLocation();
 
         playerCm.SetActive(true);
@@ -189,12 +177,14 @@ public class GameplayChange : MonoBehaviour
 
     void SetPlayerLocation()
     {
-        Vector3 posXZ = new(this.playerStartPos.position.x, playerCapsule.transform.position.y, playerStartPos.position.z);
+        Vector3 posXZ = new(playerStartPos.position.x, playerCapsule.transform.position.y, playerStartPos.position.z);
 
+        playerCapsule.transform.position = posXZ;
         playerCapsule.transform.DOMove(posXZ, cmBrain.m_DefaultBlend.m_Time);
+        playerCapsule.transform.rotation = Quaternion.Euler(0, playerStartPos.rotation.eulerAngles.y, 0);
     }
     void SetEKeyScale(float scaleVal)
-    {       
+    {
         eImage.GetComponent<RectTransform>().DOScale(scaleVal, cmBrain.m_DefaultBlend.m_Time);
     }
 }
