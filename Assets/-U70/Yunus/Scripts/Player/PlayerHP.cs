@@ -41,12 +41,27 @@ public class PlayerHP : MonoBehaviour
         if (other.CompareTag("EnemyWeapon") && other.GetComponent<EnemyWeapon>().enemyHolder.canGiveDmg)
         {
             other.GetComponent<EnemyWeapon>().enemyHolder.canGiveDmg = false;
-            GetDamage(other.GetComponent<EnemyWeapon>().enemyHolder.attackDamage);
+            GetDamage(other.GetComponent<EnemyWeapon>().enemyHolder.attackDamage, 0.3f, 6);
         }
     }
-    public void GetDamage(float damage)
+    public void GetDamage(float damage, float shakeTime, float shakeFre)
     {
-        PistolController.ins.ShakeScreenn(0.3f, damage / 10, 6);
+        PistolController.ins.ShakeScreenn(shakeTime, damage / 10, shakeFre);
+
+        hp -= damage - damage * armour;
+
+        if (hp <= 0)
+        {
+            hp = 0;
+            Die();
+        }
+
+        hpImage.fillAmount = hp / maxHealth;
+        hpTxt.text = hp.ToString();
+    }
+    public void GetDamageTrap(float damage, float shakeTime, float amplitude, float shakeFre)
+    {
+        PistolController.ins.ShakeScreenn(shakeTime, amplitude, shakeFre);
 
         hp -= damage - damage * armour;
 

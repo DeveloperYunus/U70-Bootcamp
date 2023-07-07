@@ -45,6 +45,7 @@ public class PistolController : MonoBehaviour
     Transform muzzlePos;
     int mask;                                               //linecast'teki layer ignore için 
     int ammo;
+    bool smoothResetCam;                                    //kamera titredikten sonra smooth bir þekilde normalleþsin
 
     [Space(10)]
     public Camera fpsCam;                                   //cameradan ileri ray atacaz ve deydiði yere mermi ateþleyecez
@@ -62,8 +63,10 @@ public class PistolController : MonoBehaviour
 
         pistolObj = GetComponent<Transform>();
         muzzlePos = muzzleFlashPS.transform;
+
         canAtk = true;
         isFrontWall = false;
+        smoothResetCam = false;
 
         ammo = maxPistolAmmo;
         ammoTxt.text = ammo.ToString();
@@ -103,6 +106,17 @@ public class PistolController : MonoBehaviour
 
             pistolObj.SetPositionAndRotation(pos, euler);
         }
+
+        if (smoothResetCam)
+        {
+            cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = Mathf.Lerp(cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain, defauldFre, 0.02f);
+            cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = Mathf.Lerp(cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain, defauldAmp, 0.02f);
+
+            if (cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain * 0.95f < defauldFre)
+            {
+                smoothResetCam = false;
+            }
+        }
     }
 
     public void Shoot() //Daha sonradan mobil için ui'a bir buton eklenecek
@@ -110,7 +124,7 @@ public class PistolController : MonoBehaviour
         if (canAtk && !isFrontWall && ammo > 0 && PlayerHP.ins.isAlive)
         {
             pistolAnim.SetTrigger("pistolShoot");
-            ShakeScreenn(0.15f, 1f, 8);
+            ShakeScreenn(0.2f, 2f, 2);
 
             sparklingPS.Play();
             Invoke(nameof(SmokeDelay), 0.15f);
@@ -188,14 +202,17 @@ public class PistolController : MonoBehaviour
     }
     public void ShakeScreenn(float time, float amplitude, float frequncy)
     {
-        StartCoroutine(ShakeScreen(0f, amplitude, frequncy));
-        StartCoroutine(ShakeScreen(time, defauldAmp, defauldFre));
-    }
-    IEnumerator ShakeScreen(float time, float amplitude, float frequncy)
-    {
-        yield return new WaitForSeconds(time);
         cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = frequncy;
         cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
+
+        //StartCoroutine(ShakeScreen(0f, amplitude, frequncy));                                    //eskiden bu alttaki 2 satýrý kullanýyorduk þimdi üstteki 2 satýrý kullanýyoz, smooth geçiþ saðlýyorlar
+        //StartCoroutine(ShakeScreen(time, defauldAmp, defauldFre));
+
+        Invoke(nameof(ResetCamInvoke), time);
+    }
+    void ResetCamInvoke()
+    {
+        smoothResetCam = true;
     }
 
 

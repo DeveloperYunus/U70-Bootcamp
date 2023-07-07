@@ -14,7 +14,7 @@ public class BossFireBall : MonoBehaviour
     {
         if (other.CompareTag("Player") && other.name == "Capsule")
         {
-            other.GetComponentInParent<PlayerHP>().GetDamage(damage);
+            other.GetComponentInParent<PlayerHP>().GetDamage(damage, 0.3f, 6);
 
             StopFireball();
         }

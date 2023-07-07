@@ -33,7 +33,7 @@ public class SeasonTrap : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !isGameFinished)
+        if (Input.GetKeyDown(KeyCode.E) && !isGameFinished && pillarType !=0)
         {
             CheckPillar(pillarType);
         }
@@ -47,7 +47,7 @@ public class SeasonTrap : MonoBehaviour
             OpenGate();
         }
 
-        if (pillarTurn == pillarType)//summer
+        if (pillarTurn == pillarType)
         {
             FireUp(pillarTurn);
             pillarTurn++;
@@ -76,7 +76,7 @@ public class SeasonTrap : MonoBehaviour
     {
         spikes[pillarType].DOLocalMoveZ(0, 0.3f);
 
-        PlayerHP.ins.GetDamage(1000);
+        PlayerHP.ins.GetDamageTrap(1000, 0.5f, 20, 4);
 
         Invoke(nameof(ResetGame), resetGameTime);
     }
@@ -90,7 +90,10 @@ public class SeasonTrap : MonoBehaviour
             spikes[i].DOLocalMoveZ(-0.01f, 0);
         }
 
-        playerCapsule.DOMove(new Vector3(resetPos.position.x, playerCapsule.position.y, resetPos.position.z), 0);
+        print("test et burayý");
+
+        playerCapsule.transform.position = gate.position;
+        //playerCapsule.DOMove(new Vector3(resetPos.position.x, playerCapsule.position.y, resetPos.position.z), 0);
 
         PlayerHP.ins.Resurrect();
     }
