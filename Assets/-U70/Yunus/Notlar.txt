@@ -195,3 +195,7 @@ void InstantiateBullet()		//mermili fps mekaniði
 ----------------------------------
 
 	WaterVolumeBase / Rebuild
+
+----------------------------------
+
+	<br>  bu ifade public string metin; deðiþeknine eklendiðinde metinin sonraký yazýlarýný bir alt satýra yazar

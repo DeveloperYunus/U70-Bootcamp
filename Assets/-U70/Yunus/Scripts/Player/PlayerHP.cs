@@ -103,4 +103,10 @@ public class PlayerHP : MonoBehaviour
 
         UIController.ins.Resurrect();
     }
+
+    public void StopOrContinueMove(bool move)
+    {
+        isAlive = move;
+        GetComponent<FirstPersonController>().isAlive = move;
+    }
 }
