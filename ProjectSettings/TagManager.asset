@@ -13,10 +13,7 @@ TagManager:
   - ShipBall
   - Eat
   - Ship
-  - Green
   - Blue
-  - Red
-  - Gray
   layers:
   - Default
   - TransparentFX
