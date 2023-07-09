@@ -13,7 +13,6 @@ TagManager:
   - ShipBall
   - Eat
   - Ship
-  - Blue
   layers:
   - Default
   - TransparentFX

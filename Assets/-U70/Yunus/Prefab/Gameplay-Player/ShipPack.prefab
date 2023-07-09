@@ -1409,6 +1409,11 @@ MonoBehaviour:
   mainCamera: {fileID: 459579362300460199}
   targetTransform: {fileID: 0}
   compass: {fileID: 0}
+  distanceTxt: {fileID: 0}
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &459579362442519101
 GameObject:
   m_ObjectHideFlags: 0

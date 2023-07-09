@@ -137,6 +137,11 @@ Tüm bunlarýn ardýndan dungeon yapýmýna geçilecek
 
 
 
+YENÝ YAPILACAKLAR - 09.07.2023
+	- Gemiye particle effect yap
+	- Tower isle'a iskelet düþmanlar, mermi ve yiyecekler ekle
+	- Castle dock'u düzenle
+	- Castle isle'ý yapmaya devam et
 
 
 

@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class GoalController : MonoBehaviour
 {
+    public static GoalController ins;  
+
     public TextMeshProUGUI headerTxt;
     public TextMeshProUGUI objectiveTxt;
 
     CanvasGroup headerCG, objectiveCG;
 
+    public string[] header;
+    public string[] objective;
+
+
+    private void Awake()
+    {
+        ins = this;
+    }
     void Start()
     {
         headerCG = headerTxt.GetComponent<CanvasGroup>();
         objectiveCG = objectiveTxt.GetComponent<CanvasGroup>();
 
-
         Resetobjectives();
+        SetObjectives(0);
     }
     
     public void Resetobjectives()
@@ -26,10 +36,15 @@ public class GoalController : MonoBehaviour
         headerCG.DOFade(0, 0.5f);
         objectiveCG.DOFade(0, 0.5f);
     }
-    public void SetObjectives(string header, string objective)
+    public void SetObjectives(int textNumber)
     {
-        headerTxt.text = header;
-        objectiveTxt.text = objective;
+        headerTxt.text = header[textNumber];
+        objectiveTxt.text = objective[textNumber];
+
+        CompassArrow.ins.SetTarget(textNumber);             //bu numara ayný zamanda target transformalar içinde kullanýlabilir
+
+        headerCG.DOKill();
+        objectiveCG.DOKill();
 
         headerCG.DOFade(1, 0.2f);
         objectiveCG.DOFade(1, 0.2f).SetDelay(0.2f);

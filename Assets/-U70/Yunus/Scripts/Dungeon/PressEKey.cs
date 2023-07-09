@@ -7,10 +7,20 @@ public class PressEKey : MonoBehaviour
     public static bool isEKeyActive;
     public static string eKeyFunction;
 
-    [Header("--- Needs For Functions ---")]
+    [Header("--- NEEDS FOR FUNCTIONS---")]
     public CanvasGroup papirusImg;
     public TextMeshProUGUI papirusTxt;
+
+    [Header("--- Fish Isle ---")]
     public string goTowerIsleTxt;
+
+    [Header("--- Tower Isle ---")]
+    public float transitionTime;
+    public Transform playerCapsule;
+    public string goCastleIsleTxt;
+
+    public Transform[] pos;
+
 
     private void Start()
     {
@@ -51,10 +61,6 @@ public class PressEKey : MonoBehaviour
     {
         Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
     }
-    void UpdateGoalTxt()
-    {
-        print("Update goal text");
-    }
 
     void EKeyFunction()
     {
@@ -62,8 +68,28 @@ public class PressEKey : MonoBehaviour
         {
             case "FishIsleChest":
                 OpenPapirusImg(goTowerIsleTxt);
+                GoalController.ins.SetObjectives(1);                //goal text bu satýr ile güncellenir
+                break;
 
-                UpdateGoalTxt();
+            case "GoTowerFirstFloor":
+                playerCapsule.DOMove(pos[0].position, transitionTime);
+                break;
+
+            case "GoTowerZeroFloor":
+                playerCapsule.DOMove(pos[1].position, transitionTime);
+                break;
+
+            case "GoTowerFirstFloor2":
+                playerCapsule.DOMove(pos[2].position, transitionTime);
+                break;
+
+            case "GoTowerSecondFloor":
+                playerCapsule.DOMove(pos[3].position, transitionTime);
+                break;
+
+            case "TowerIsleChest":
+                OpenPapirusImg(goCastleIsleTxt);
+                GoalController.ins.SetObjectives(2);                //goal text bu satýr ile güncellenir
                 break;
         }
     }

@@ -6,6 +6,10 @@ public class ShowEImage : MonoBehaviour
     public CanvasGroup eImage;
     public string eKeyFunction;
 
+    private void Start()
+    {
+        ShowEImagee(false);
+    }
     private void OnTriggerEnter(Collider other)
     {
         ShowEImagee(true);
