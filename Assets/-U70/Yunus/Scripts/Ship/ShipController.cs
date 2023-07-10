@@ -1,5 +1,4 @@
 using DG.Tweening;
-using TMPro;
 using UnityEngine;
 
 public class ShipController : MonoBehaviour
@@ -8,7 +7,7 @@ public class ShipController : MonoBehaviour
     public bool canShipMove;
     int shipSpeedLvl;       //ship level -1, 0, 1, 2
 
-    public Rigidbody rb;
+    [HideInInspector] public Rigidbody rb;
 
     [Header("Ship Controller")]
     public float moveSpeed;
@@ -24,6 +23,10 @@ public class ShipController : MonoBehaviour
 
     public float sailUpTime;
     public float sailDownTime;
+
+    [Header("Ship VFX")]
+    public ParticleSystem shipFoamBody;
+
 
     private void Awake()
     {
@@ -100,6 +103,8 @@ public class ShipController : MonoBehaviour
                 SetSailScale(sailFront, false);
                 SetSailScale(sailMiddle, true);
                 SetSailScale(sailBack, false);
+
+                SetShipFoam(true);
                 break;
 
 
@@ -109,6 +114,8 @@ public class ShipController : MonoBehaviour
                 SetSailScale(sailFront, true);
                 SetSailScale(sailMiddle, true);
                 SetSailScale(sailBack, true);
+
+                SetShipFoam(true);
                 break;
 
 
@@ -118,6 +125,8 @@ public class ShipController : MonoBehaviour
                 SetSailScale(sailFront, false);
                 SetSailScale(sailMiddle, false);
                 SetSailScale(sailBack, false);
+
+                SetShipFoam(false);
                 break;
 
             case -1:
@@ -126,6 +135,8 @@ public class ShipController : MonoBehaviour
                 SetSailScale(sailFront, false);
                 SetSailScale(sailMiddle, false);
                 SetSailScale(sailBack, false);
+
+                SetShipFoam(false);
                 break;
         }
     }
@@ -151,5 +162,13 @@ public class ShipController : MonoBehaviour
     public void AnchorTheShip()
     {
         rb.velocity = Vector3.zero;
+    }
+
+    void SetShipFoam(bool active)
+    {
+        if (active)
+            shipFoamBody.Play();
+        else
+            shipFoamBody.Stop();
     }
 }

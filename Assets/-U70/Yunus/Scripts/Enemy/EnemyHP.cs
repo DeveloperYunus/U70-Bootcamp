@@ -33,7 +33,7 @@ public class EnemyHP : MonoBehaviour
     }
     public void GetDamage(float damage)
     {
-        if (this.enabled)
+        if (enabled)
         {
             hp -= damage - damage * armour;
 
@@ -45,6 +45,7 @@ public class EnemyHP : MonoBehaviour
 
             hpImage.fillAmount = hp / maxHealth;
             hpTxt.text = hp.ToString();
+            GetComponent<EnemyNavMesh>().FollowPlayer();
         }
     }
 
@@ -77,5 +78,13 @@ public class EnemyHP : MonoBehaviour
         {
             GeneralPool.BulletAmmo(transform.position, bulletDieTime);
         }
+    }
+
+    public void SetSkeletonStats(float hpS, float armourS, float damage)
+    {
+        maxHealth = hpS;
+        hp = hpS;
+        armour = armourS;
+        GetComponent<EnemyNavMesh>().attackDamage = damage;
     }
 }

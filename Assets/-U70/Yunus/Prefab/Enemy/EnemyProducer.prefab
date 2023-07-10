@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4043916890385178458}
   - component: {fileID: 4043916890385178453}
-  m_Layer: 0
+  - component: {fileID: 1008656687}
+  m_Layer: 8
   m_Name: EnemyProducer
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -45,4 +46,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3413120489866164721, guid: c7785f7440eea7a408933ff9e5097c0d, type: 3}
-  timer: 3
+  health: 20
+  armour: 0.1
+  damage: 15
+  skeletonAmount: 2
+  range: 8
+--- !u!65 &1008656687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043916890385178459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 10, z: 20}
+  m_Center: {x: 0, y: 2.5, z: 0}
