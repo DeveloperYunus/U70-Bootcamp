@@ -14,10 +14,12 @@ public class GoalController : MonoBehaviour
     public string[] header;
     public string[] objective;
 
+    public static int goalValue;                //sahne yüklenmelerinde deðer deðiþmesin diye buna atýyoruz (normalde bu þekilde yapmak mantýklý deðil ama zaman az :D)
 
     private void Awake()
     {
         ins = this;
+        goalValue = 0;
     }
     void Start()
     {
@@ -25,7 +27,7 @@ public class GoalController : MonoBehaviour
         objectiveCG = objectiveTxt.GetComponent<CanvasGroup>();
 
         Resetobjectives();
-        SetObjectives(0);
+        SetObjectives(goalValue);
     }
     
     public void Resetobjectives()
@@ -42,6 +44,7 @@ public class GoalController : MonoBehaviour
         objectiveTxt.text = objective[textNumber];
 
         CompassArrow.ins.SetTarget(textNumber);             //bu numara ayný zamanda target transformalar içinde kullanýlabilir
+        goalValue = textNumber;
 
         headerCG.DOKill();
         objectiveCG.DOKill();
@@ -49,8 +52,8 @@ public class GoalController : MonoBehaviour
         headerCG.DOFade(1, 0.2f);
         objectiveCG.DOFade(1, 0.2f).SetDelay(0.2f);
 
-        SetScale(headerTxt.GetComponent<RectTransform>(), 0.5f);
-        SetScale(objectiveTxt.GetComponent<RectTransform>(), 0.5f);
+        SetScale(headerTxt.GetComponent<RectTransform>(), 0.1f);
+        SetScale(objectiveTxt.GetComponent<RectTransform>(), 0.1f);
     }
 
     void SetScale(RectTransform text, float waitTime)

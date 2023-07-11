@@ -1,6 +1,7 @@
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PressEKey : MonoBehaviour
 {
@@ -21,9 +22,14 @@ public class PressEKey : MonoBehaviour
 
     public Transform[] pos;
 
+    [Header("--- Castle Isle ---")]
+    public RectTransform sceneTransition;
+    public float sceneUpDownTime;
+
 
     private void Start()
     {
+        sceneTransition.DOMoveX(-2000, sceneUpDownTime);
         isEKeyActive = false;
 
         papirusImg.alpha = 0;
@@ -90,6 +96,14 @@ public class PressEKey : MonoBehaviour
             case "TowerIsleChest":
                 OpenPapirusImg(goCastleIsleTxt);
                 GoalController.ins.SetObjectives(2);                //goal text bu satýr ile güncellenir
+                break;
+
+            case "GoDungeon":
+                sceneTransition.DOMoveX(1000, sceneUpDownTime).OnComplete(() =>
+                {
+                    SceneManager.LoadScene("BossRoom");
+                });
+                GoalController.ins.SetObjectives(3);
                 break;
         }
     }
