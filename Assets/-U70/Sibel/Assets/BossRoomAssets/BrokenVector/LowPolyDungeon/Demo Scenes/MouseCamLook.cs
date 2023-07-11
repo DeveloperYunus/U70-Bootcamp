@@ -10,7 +10,8 @@ public class MouseCamLook : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined; // Fare imleci ekranda sınırlı bir alanda hareket eder
+        Cursor.visible = true; // Fare imleci görünür hale getirilir
     }
 
     void Update()
