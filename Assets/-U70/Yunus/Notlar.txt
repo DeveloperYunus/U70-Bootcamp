@@ -138,8 +138,15 @@ Tüm bunlarýn ardýndan dungeon yapýmýna geçilecek
 
 
 YENÝ YAPILACAKLAR - 09.07.2023
-	- Castle dock'u düzenle
-	- Castle isle'ý yapmaya devam et
+	- Dungeon'a görevleri ekle
+	- Dungeno playerPack'i ekle
+	- Dungeon'a enemyleri ekle
+	- Dungeon'a yemekler ve cephanelikleri ekle
+	- Dungeona Boss'u ekle 
+	- Dungeon da boss'u kesince görevler güncellensin
+	- Boss dan sonra sandýktan ödülümüzü alalým
+		
+		- Ve oyun bitsin
 
 
 
