@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-    public float baseSpeed = 12f;
-    public float gravity = -9.81f;
-    public float jumpHeight = 3f;
-    public float sprintSpeed = 5f;
+    public float baseSpeed = 0f;
+    public float gravity = 0f;
+    public float jumpHeight = 0f;
+    public float sprintSpeed = 0f;
 
-    float speedBoost = 1f;
+    float speedBoost = 0f;
     Vector3 velocity;
     void Start()
     {
@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButton("Fire3"))
             speedBoost = sprintSpeed;
         else
-            speedBoost = 1f;
+            speedBoost = 0f;
 
 
         Vector3 move = transform.right * x + transform.forward * z;
