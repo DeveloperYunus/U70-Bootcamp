@@ -1,6 +1,7 @@
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GoalController : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class GoalController : MonoBehaviour
     private void Awake()
     {
         ins = this;
-        goalValue = 0;
+        if (SceneManager.GetActiveScene().name == "MainScene")
+            goalValue = 0;
     }
     void Start()
     {
@@ -43,7 +45,8 @@ public class GoalController : MonoBehaviour
         headerTxt.text = header[textNumber];
         objectiveTxt.text = objective[textNumber];
 
-        CompassArrow.ins.SetTarget(textNumber);             //bu numara ayný zamanda target transformalar içinde kullanýlabilir
+        if (CompassArrow.ins) 
+            CompassArrow.ins.SetTarget(textNumber);             //bu numara ayný zamanda target transformalar içinde kullanýlabilir
         goalValue = textNumber;
 
         headerCG.DOKill();

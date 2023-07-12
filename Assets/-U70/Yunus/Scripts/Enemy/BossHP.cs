@@ -55,6 +55,7 @@ public class BossHP : MonoBehaviour
             UIDisappear();
 
             GetComponent<BossAI>().Die();
+            GoalController.ins.SetObjectives(4);
         }
     }
     void UIDisappear()
