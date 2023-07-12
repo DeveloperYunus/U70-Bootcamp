@@ -12,7 +12,7 @@ public class MouseCamLook : MonoBehaviour
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
-    public GameObject MainMenuCanvas, QuitGameMenu, DoorQuitGameMenu;
+    public GameObject MainMenuCanvas, QuitGameMenu, DoorQuitGameMenu, StartMenu, CreditsMenu;
     bool bookOpened = false, book = false, door = false;
     public AudioSource MainMenuMusic;
     public Slider MusicSlider, SoundSlider;
@@ -99,7 +99,7 @@ public class MouseCamLook : MonoBehaviour
 
     public void CloseMenu()
     {
-        MainMenuCanvas.transform.DOScale(new Vector3(0, 0, 0), 1);
+        MainMenuCanvas.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => MainMenuCanvas.SetActive(false));
         bookOpened = false;
     }
     public void OpenQuitMenu()
@@ -117,8 +117,28 @@ public class MouseCamLook : MonoBehaviour
     public void DoorCloseQuitMenu()
     {
 
-        DoorQuitGameMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => QuitGameMenu.SetActive(false));
+        DoorQuitGameMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => DoorQuitGameMenu.SetActive(false));
         bookOpened = false;
+    }
+
+    public void CloseStartMenu()
+    {
+        StartMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => StartMenu.SetActive(false));
+    }
+    public void OpenStartMenu()
+    {
+        StartMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+
+    }
+
+    public void CloseCreditsMenu()
+    {
+        CreditsMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => CreditsMenu.SetActive(false));
+    }
+    public void OpenCreditsMenu()
+    {
+        CreditsMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+
     }
 
 
