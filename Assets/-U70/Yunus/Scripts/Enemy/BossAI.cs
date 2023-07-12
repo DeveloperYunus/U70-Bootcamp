@@ -20,7 +20,7 @@ public class BossAI : MonoBehaviour
     float rangeSqr;                                             //range deðiþkeninin karesi optimizasyon için
     int attackCount;
 
-    bool canAtk;
+    bool canAtk, isAlive;
 
     Transform pcTransform;                                      //PistolController objesinin transformunu tutar
     Animator anim;
@@ -51,10 +51,14 @@ public class BossAI : MonoBehaviour
         distCheck = distanceCheckTime;
 
         canAtk = true;
+        isAlive = true;
         attackCount = 0;
     }
     void Update()
     {
+        if (!isAlive)
+            return;
+
         if (distCheck > 0)
         {
             if (DistCheckPlayer())
@@ -169,7 +173,9 @@ public class BossAI : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject, 0.1f);
+        isAlive = false;
+        anim.SetTrigger("dead");
+        Destroy(gameObject, 2.5f);
     }
 
     void ResetAtk()

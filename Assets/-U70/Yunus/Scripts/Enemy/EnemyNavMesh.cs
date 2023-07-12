@@ -93,6 +93,7 @@ public class EnemyNavMesh : MonoBehaviour
     {
         isAlive = false;
         agent.isStopped = true;
+        agent.speed = 0;
 
         bodyColl.enabled = false;               //öldükten sonra diðer karakterler içinden geçebilsin diye
         Invoke(nameof(Awd), 0.1f);

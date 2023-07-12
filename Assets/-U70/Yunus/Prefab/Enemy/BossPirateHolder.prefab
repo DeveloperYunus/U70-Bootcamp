@@ -5416,7 +5416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6823a70e1193de34f8baf8059e3d0109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 110
+  maxHealth: 200
   armour: 0.1
   canTakeDmg: 0
   hpCanvas: {fileID: 727291682119229202}
