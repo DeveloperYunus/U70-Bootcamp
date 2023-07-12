@@ -6,6 +6,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MouseCamLook : MonoBehaviour
 {
@@ -151,4 +152,15 @@ public class MouseCamLook : MonoBehaviour
     {
         AudioListener.volume = SoundSlider.value;
     }
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void ApplicationQuit()
+    {
+        ApplicationQuit();
+    }
+
 }

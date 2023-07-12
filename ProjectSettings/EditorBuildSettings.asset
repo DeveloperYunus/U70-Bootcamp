@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/-U70/Sibel/Scenes/MainMenuScene.unity
+    guid: e6896be2341584c428f31cb963262587
+  - enabled: 1
     path: Assets/-U70/Sibel/Scenes/MainScene.unity
     guid: 9690d22d334619f4b97517ad26eb31ed
   - enabled: 1
