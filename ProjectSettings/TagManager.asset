@@ -17,6 +17,7 @@ TagManager:
   - Door
   - Desk
   - Bottle
+  - CheckP
   layers:
   - Default
   - TransparentFX
