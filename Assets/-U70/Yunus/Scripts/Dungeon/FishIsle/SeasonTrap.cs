@@ -76,7 +76,7 @@ public class SeasonTrap : MonoBehaviour
     {
         spikes[pillarType].DOLocalMoveZ(0, 0.3f);
 
-        PlayerHP.ins.GetDamageTrap(1000, 0.5f, 20, 4);
+        PlayerHP.ins.GetDamageTrap(2000, 0.5f, 20, 4);
 
         playerCapsule.DOMove(new Vector3(resetPos.position.x, playerCapsule.position.y, resetPos.position.z), 0.01f).SetDelay(resetGameTime - 0.5f);
         Invoke(nameof(ResetSeasonTrap), resetGameTime);

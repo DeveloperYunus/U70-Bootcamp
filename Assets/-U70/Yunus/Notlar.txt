@@ -138,10 +138,12 @@ Tüm bunlarýn ardýndan dungeon yapýmýna geçilecek
 
 
 YENÝ YAPILACAKLAR - 09.07.2023
-	- Boss dan sonra sandýktan ödülümüzü alalým
-	- Chekpoint sistemi +8 bullet +%50 can
+	+ Boss dan sonra sandýktan ödülümüzü alalým
+	+ Chekpoint sistemi +8 bullet +%50 can
 		
-		- Ve oyun bitsin
+		
+BugFix
+	- Skeleton die down increase
 
 
 

@@ -1,4 +1,5 @@
 using DG.Tweening;
+using StarterAssets;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -26,6 +27,10 @@ public class PressEKey : MonoBehaviour
     public RectTransform sceneTransition;
     public float sceneUpDownTime;
 
+    [Header("--- Castle Isle ---")]
+    public string winGameTxt;
+    public CanvasGroup endGameTxt;
+
 
     private void Start()
     {
@@ -34,6 +39,8 @@ public class PressEKey : MonoBehaviour
 
         papirusImg.alpha = 0;
         papirusImg.GetComponent<RectTransform>().DOScale(0f, 0f);
+
+        endGameTxt.alpha = 0;
     }
 
     void Update()
@@ -105,6 +112,22 @@ public class PressEKey : MonoBehaviour
                 });
                 GoalController.ins.SetObjectives(3);
                 break;
+
+            case "WinGameChest":
+                OpenPapirusImg(winGameTxt);
+                WinGameFunc();
+                break;
+                
         }
+    }
+
+    void WinGameFunc()
+    {
+        PlayerHP.ins.StopOrContinueMove(false);
+        
+        sceneTransition.DOMoveX(1000, sceneUpDownTime).OnComplete(() =>
+        {
+            endGameTxt.DOFade(1, 2f);
+        });
     }
 }
