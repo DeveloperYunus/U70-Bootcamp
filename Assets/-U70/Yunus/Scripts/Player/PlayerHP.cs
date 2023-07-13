@@ -11,13 +11,14 @@ public class PlayerHP : MonoBehaviour
     public float maxHealth;
     [Range(0f, 1f)]
     public float armour;
+    public float goCheckPointPosTime;
 
     [HideInInspector] public float hp;
     [HideInInspector] public bool isAlive;
 
-    [Header("Objects")]
-    public TextMeshProUGUI hpTxt;
-    public Image hpImage;
+    //[Header("Objects")]
+    [HideInInspector] public TextMeshProUGUI hpTxt;
+    [HideInInspector] public Image hpImage;
 
     [Header("Health")]
     public ParticleSystem incHPEffect;                  //increase hp effect
@@ -29,6 +30,10 @@ public class PlayerHP : MonoBehaviour
     }
     void Start()
     {
+        hpTxt = GameObject.Find("PlayerHPText").GetComponent<TextMeshProUGUI>();
+        hpImage = GameObject.Find("HPImage").GetComponent<Image>();
+
+
         hp = maxHealth;
 
         isAlive = true;
@@ -54,6 +59,9 @@ public class PlayerHP : MonoBehaviour
         {
             hp = 0;
             Die();
+            //buraya normal yollardan öldüðümüz için dirilme kodunu yaz (check point system)
+            Invoke(nameof(Resurrect), goCheckPointPosTime);
+            CheckPointSystem.ins.PlayerGoCheckPoint(goCheckPointPosTime - 0.5f);
         }
 
         hpImage.fillAmount = hp / maxHealth;
@@ -90,14 +98,18 @@ public class PlayerHP : MonoBehaviour
 
     void Die()
     {
-        isAlive = false;
-        GetComponent<FirstPersonController>().isAlive = false;
+        if (isAlive)
+        {
+            isAlive = false;
+            GetComponent<FirstPersonController>().isAlive = false;
 
-        UIController.ins.YouDied();
+            UIController.ins.YouDied();
+        }
     }
     public void Resurrect()//player'ý canlandýr
     {
-        IncreaseHP(maxHealth);
+        IncreaseHP(maxHealth * 0.5f);
+        PlayerCollect.ins.UptAmmo(8);
         isAlive = true;
         GetComponent<FirstPersonController>().isAlive = true;
 

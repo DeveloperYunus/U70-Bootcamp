@@ -6,9 +6,9 @@ public class PlayerCollect : MonoBehaviour
 {
     public static PlayerCollect ins;
 
-    [Header("Text")]
-    public TextMeshProUGUI totalAmmoTxt;
-    public TextMeshProUGUI collectTxt;
+    //[Header("Text")]
+    [HideInInspector] public TextMeshProUGUI totalAmmoTxt;
+    [HideInInspector] public TextMeshProUGUI collectTxt;
 
     [Header("Ammo")]
     public CollectableObj bullet;
@@ -28,6 +28,9 @@ public class PlayerCollect : MonoBehaviour
     }
     private void Start()
     {
+        totalAmmoTxt = GameObject.Find("MaxPocketAmmoTxt").GetComponent<TextMeshProUGUI>();
+        collectTxt = GameObject.Find("CollectTxt").GetComponent<TextMeshProUGUI>();
+
         eatHPAmount = eatHpPercent * PlayerHP.ins.maxHealth;
 
         UptAmmo(0);

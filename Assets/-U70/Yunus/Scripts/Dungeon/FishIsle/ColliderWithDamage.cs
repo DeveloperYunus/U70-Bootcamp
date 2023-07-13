@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ColliderWithDamage : MonoBehaviour
 {
-    public float damage;
+    float damage;
 
     [Space(10)]
     public Transform playerCapsule;
@@ -15,7 +15,7 @@ public class ColliderWithDamage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerHP>().GetDamageTrap(damage, 0.5f, 10, 5);
+            other.GetComponent<PlayerHP>().GetDamageTrap(2000, 0.5f, 10, 5);
 
             StopBlade();
             ResetBladeTrap();
