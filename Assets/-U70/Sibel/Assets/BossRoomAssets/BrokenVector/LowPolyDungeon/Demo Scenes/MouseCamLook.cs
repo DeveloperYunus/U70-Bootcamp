@@ -13,8 +13,8 @@ public class MouseCamLook : MonoBehaviour
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
-    public GameObject MainMenuCanvas, QuitGameMenu, DoorQuitGameMenu, StartMenu, CreditsMenu;
-    bool bookOpened = false, book = false, door = false;
+    public GameObject MainMenuCanvas, QuitGameMenu, DoorQuitGameMenu, StartMenu, CreditsMenu, MapMenu, BottleMenu;
+    bool bookOpened = false, book = false, door = false, desk =false, bottle= false;
     public AudioSource MainMenuMusic;
     public Slider MusicSlider, SoundSlider;
     public AudioListener AudioListener;
@@ -63,6 +63,21 @@ public class MouseCamLook : MonoBehaviour
 
             }
 
+            if (desk)
+            {
+                MapMenu.SetActive(true);
+                MapMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+                bookOpened = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+
+            if (bottle)
+            {
+                BottleMenu.SetActive(true);
+                BottleMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+                bookOpened = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
         }
 
 
@@ -95,6 +110,23 @@ public class MouseCamLook : MonoBehaviour
                 door = false;
             }
 
+            if (hit.collider.gameObject.tag == "Desk")
+            {
+                desk = true;
+            }
+            else
+            {
+                desk = false;
+            }
+
+            if (hit.collider.gameObject.tag == "Bottle")
+            {
+                bottle = true;
+            }
+            else
+            {
+                bottle = false;
+            }
         }
     }
 
@@ -122,6 +154,8 @@ public class MouseCamLook : MonoBehaviour
         bookOpened = false;
     }
 
+    
+
     public void CloseStartMenu()
     {
         StartMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => StartMenu.SetActive(false));
@@ -142,7 +176,27 @@ public class MouseCamLook : MonoBehaviour
 
     }
 
+    public void CloseMapMenu()
+    {
+        MapMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => MapMenu.SetActive(false));
+        bookOpened = false;
+    }
+    public void OpenMapMenu()
+    {
+        MapMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
 
+    }
+
+    public void CloseBottleMenu()
+    {
+        BottleMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => BottleMenu.SetActive(false));
+        bookOpened = false;
+    }
+    public void OpenBottleMenu()
+    {
+        BottleMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+
+    }
 
     public void MusicVolumeChange()
     {
