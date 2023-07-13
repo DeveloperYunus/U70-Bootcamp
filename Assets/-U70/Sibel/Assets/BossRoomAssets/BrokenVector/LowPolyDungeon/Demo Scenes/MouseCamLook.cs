@@ -48,7 +48,7 @@ public class MouseCamLook : MonoBehaviour
             if (book)
             {
                 MainMenuCanvas.SetActive(true);
-                MainMenuCanvas.transform.DOScale(new Vector3(1, 1, 1), 1);
+                MainMenuCanvas.transform.DOScale(new Vector3(2, 2, 2), 1);
                 bookOpened = true;
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -57,7 +57,7 @@ public class MouseCamLook : MonoBehaviour
             {
 
                 DoorQuitGameMenu.SetActive(true);
-                DoorQuitGameMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+                DoorQuitGameMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
                 bookOpened = true;
                 Cursor.lockState = CursorLockMode.None;
 
@@ -66,7 +66,7 @@ public class MouseCamLook : MonoBehaviour
             if (desk)
             {
                 MapMenu.SetActive(true);
-                MapMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+                MapMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
                 bookOpened = true;
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -74,7 +74,7 @@ public class MouseCamLook : MonoBehaviour
             if (bottle)
             {
                 BottleMenu.SetActive(true);
-                BottleMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+                BottleMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
                 bookOpened = true;
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -137,7 +137,7 @@ public class MouseCamLook : MonoBehaviour
     }
     public void OpenQuitMenu()
     {
-        QuitGameMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+        QuitGameMenu.transform.DOScale(new Vector3 (2, 2, 2), 1);
 
     }
 
@@ -162,7 +162,7 @@ public class MouseCamLook : MonoBehaviour
     }
     public void OpenStartMenu()
     {
-        StartMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+        StartMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
 
     }
 
@@ -172,7 +172,7 @@ public class MouseCamLook : MonoBehaviour
     }
     public void OpenCreditsMenu()
     {
-        CreditsMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+        CreditsMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
 
     }
 
@@ -183,7 +183,7 @@ public class MouseCamLook : MonoBehaviour
     }
     public void OpenMapMenu()
     {
-        MapMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+        MapMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
 
     }
 
@@ -194,7 +194,7 @@ public class MouseCamLook : MonoBehaviour
     }
     public void OpenBottleMenu()
     {
-        BottleMenu.transform.DOScale(new Vector3(1, 1, 1), 1);
+        BottleMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
 
     }
 
