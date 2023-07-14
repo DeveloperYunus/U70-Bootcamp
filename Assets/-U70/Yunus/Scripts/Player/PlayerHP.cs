@@ -30,7 +30,7 @@ public class PlayerHP : MonoBehaviour
     }
     void Start()
     {
-        hpTxt = GameObject.Find("PlayerHPText").GetComponent<TextMeshProUGUI>();
+        hpTxt = GameObject.Find("PlayerHPTxt").GetComponent<TextMeshProUGUI>();
         hpImage = GameObject.Find("HPImage").GetComponent<Image>();
 
 
