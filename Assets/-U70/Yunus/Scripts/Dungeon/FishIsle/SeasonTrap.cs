@@ -88,6 +88,7 @@ public class SeasonTrap : MonoBehaviour
 
         for (int i = 0; i < spikes.Length; i++)
         {
+            pillarFireVFX[i].Stop();
             spikes[i].DOLocalMoveZ(-0.01f, 0);
         }
         
