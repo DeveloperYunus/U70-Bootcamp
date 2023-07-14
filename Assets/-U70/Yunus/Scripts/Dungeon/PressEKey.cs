@@ -30,6 +30,8 @@ public class PressEKey : MonoBehaviour
     [Header("--- Castle Isle ---")]
     public string winGameTxt;
     public CanvasGroup endGameTxt;
+    public float winChestReadTime;
+    public float endGameReadTime;
 
 
     private void Start()
@@ -115,7 +117,9 @@ public class PressEKey : MonoBehaviour
 
             case "WinGameChest":
                 OpenPapirusImg(winGameTxt);
-                WinGameFunc();
+                Invoke(nameof(WinGameFunc), winChestReadTime);
+
+                Invoke(nameof(GoLevelScene), endGameReadTime + winChestReadTime);
                 break;
                 
         }
@@ -129,5 +133,10 @@ public class PressEKey : MonoBehaviour
         {
             endGameTxt.DOFade(1, 2f);
         });
+    }
+
+    void GoLevelScene() 
+    {
+        SceneManager.LoadScene("MainMenuScene");
     }
 }

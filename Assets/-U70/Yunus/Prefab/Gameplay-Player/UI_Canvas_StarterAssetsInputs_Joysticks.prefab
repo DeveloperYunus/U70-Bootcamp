@@ -3895,6 +3895,8 @@ MonoBehaviour:
   winGameTxt: Now, you are free. And you know where to find us. <br><br>But do you
     want to find us?
   endGameTxt: {fileID: 6839237006357845231}
+  winChestReadTime: 6
+  endGameReadTime: 5
 --- !u!1 &6690926988067742028
 GameObject:
   m_ObjectHideFlags: 0
