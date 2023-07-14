@@ -3697,7 +3697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3882,7 +3882,7 @@ MonoBehaviour:
   papirusTxt: {fileID: 651762000}
   goTowerIsleTxt: 'Dear pirate friend, you must go to the old tower isle, if you
     want to find great pirate tresure. <br><br>Good luck on your path '
-  transitionTime: 1
+  transitionTime: 2
   playerCapsule: {fileID: 0}
   goCastleIsleTxt: '"The Key" <br><br> and a message <br><br>LONG LIVE THE DEAD PIRATE'
   pos:
