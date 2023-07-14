@@ -18,6 +18,7 @@ TagManager:
   - Desk
   - Bottle
   - CheckP
+  - Text
   layers:
   - Default
   - TransparentFX
