@@ -87,19 +87,23 @@ public class PressEKey : MonoBehaviour
                 break;
 
             case "GoTowerFirstFloor":
-                playerCapsule.DOMove(pos[0].position, transitionTime);
+                PlayerHP.ins.StopOrContinueMove(false);
+                playerCapsule.DOMove(pos[0].position, transitionTime).OnComplete(() => PlayerHP.ins.StopOrContinueMove(true));
                 break;
 
             case "GoTowerZeroFloor":
-                playerCapsule.DOMove(pos[1].position, transitionTime);
+                PlayerHP.ins.StopOrContinueMove(false);
+                playerCapsule.DOMove(pos[1].position, transitionTime).OnComplete(() => PlayerHP.ins.StopOrContinueMove(true));
                 break;
 
             case "GoTowerFirstFloor2":
-                playerCapsule.DOMove(pos[2].position, transitionTime);
+                PlayerHP.ins.StopOrContinueMove(false);
+                playerCapsule.DOMove(pos[2].position, transitionTime).OnComplete(() => PlayerHP.ins.StopOrContinueMove(true));
                 break;
 
             case "GoTowerSecondFloor":
-                playerCapsule.DOMove(pos[3].position, transitionTime);
+                PlayerHP.ins.StopOrContinueMove(false);
+                playerCapsule.DOMove(pos[3].position, transitionTime).OnComplete(() => PlayerHP.ins.StopOrContinueMove(true));
                 break;
 
             case "TowerIsleChest":
