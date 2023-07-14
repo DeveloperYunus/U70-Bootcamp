@@ -15,7 +15,7 @@ public class MenuSceneTransition : MonoBehaviour
     void Start()
     {
         transform.DOMoveX(0, 0);
-        transform.DOMoveX(-3500, scenetransTime);
+        transform.DOMoveX(-4000, scenetransTime);
     }
 
     public void SceneFadeUp()
