@@ -36,6 +36,7 @@ public class PressEKey : MonoBehaviour
 
     private void Start()
     {
+        sceneTransition.GetComponent<RectTransform>().DOScale(1, 0);
         sceneTransition.DOMoveX(-2000, sceneUpDownTime);
         isEKeyActive = false;
 
