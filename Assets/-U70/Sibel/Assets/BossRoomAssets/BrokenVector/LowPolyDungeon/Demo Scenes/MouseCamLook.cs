@@ -18,6 +18,9 @@ public class MouseCamLook : MonoBehaviour
         //Cursor.lockState = CursorLockMode.Confined; // Fare imleci ekranda sınırlı bir alanda hareket eder
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true; // Fare imleci görünür hale getirilir
+
+        AudioListener.volume = PlayerPrefs.GetFloat("soundVolume", 1);
+        SoundSlider.value = PlayerPrefs.GetFloat("soundVolume", 1);
     }
 
     void Update()
@@ -209,6 +212,7 @@ public class MouseCamLook : MonoBehaviour
     }
     public void SoundVolumeChange()
     {
+        PlayerPrefs.SetFloat("soundVolume", SoundSlider.value);
         AudioListener.volume = SoundSlider.value;
     }
 

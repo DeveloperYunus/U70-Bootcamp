@@ -147,12 +147,6 @@ BugFix
 
 
 
-	AudioListener.volume = PlayerPrefs.GetFloat("soundVolume", 1);
-        SoundSlider.value = PlayerPrefs.GetFloat("soundVolume",1);
-
-		PlayerPrefs.SetFloat("soundVolume", SoundSlider.value);
-
-
 
 
 
