@@ -55,7 +55,6 @@ public class PistolController : MonoBehaviour
     private void Awake()
     {
         ins = this;
-        //Application.targetFrameRate = 100;
     }
     void Start()
     {

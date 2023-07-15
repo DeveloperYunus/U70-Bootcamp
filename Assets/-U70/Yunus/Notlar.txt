@@ -157,12 +157,7 @@ LAZIM OLAN SESLER
 BUGFÝX
 	- Boss fireball saçma bir þekilde patlýyor
 
-
 	- Oyundan çýkma kýsmý çalýþmýyor
-
-
-
-
 
 
 

@@ -7,6 +7,9 @@ public class PressEKey : MonoBehaviour
 {
     public static bool isEKeyActive;
     public static string eKeyFunction;
+    bool isPlayerHadKey;                                //dunageona girmek için gerekli anahtar -- tower kulesindeki sandýkta gizli
+
+    public int targetFPS;
 
     [Header("--- NEEDS FOR FUNCTIONS---")]
     public CanvasGroup papirusImg;
@@ -19,12 +22,14 @@ public class PressEKey : MonoBehaviour
     public float transitionTime;
     public Transform playerCapsule;
     public string goCastleIsleTxt;
+    public GameObject keyObj;
 
     public Transform[] pos;
 
     [Header("--- Castle Isle ---")]
     public RectTransform sceneTransition;
     public float sceneUpDownTime;
+    public CanvasGroup doNotPassTxt;
 
     [Header("--- Castle Isle ---")]
     public string winGameTxt;
@@ -35,6 +40,8 @@ public class PressEKey : MonoBehaviour
 
     private void Start()
     {
+        Application.targetFrameRate = targetFPS;
+
         sceneTransition.GetComponent<RectTransform>().DOScale(1, 0).SetUpdate(true);
         sceneTransition.DOMoveX(-2000, sceneUpDownTime).SetUpdate(true);
         isEKeyActive = false;
@@ -108,17 +115,32 @@ public class PressEKey : MonoBehaviour
                 playerCapsule.DOMove(pos[3].position, transitionTime).OnComplete(() => PlayerHP.ins.StopOrContinueMove(true));
                 break;
 
-            case "TowerIsleChest":
+            case "TowerIsleChest":                
+                Destroy(keyObj);
+                isPlayerHadKey = true;
+
                 OpenPapirusImg(goCastleIsleTxt);
                 GoalController.ins.SetObjectives(2);                //goal text bu satýr ile güncellenir
                 break;
 
             case "GoDungeon":
-                sceneTransition.DOMoveX(1000, sceneUpDownTime).SetUpdate(true).OnComplete(() =>
+                if (isPlayerHadKey)
                 {
-                    SceneManager.LoadScene("BossRoom");
-                });
-                GoalController.ins.SetObjectives(3);
+                    sceneTransition.DOMoveX(1000, sceneUpDownTime).SetUpdate(true).OnComplete(() =>
+                    {
+                        SceneManager.LoadScene("BossRoom");
+                    });
+
+                    GoalController.ins.SetObjectives(3);
+                }
+                else
+                {
+                    doNotPassTxt.GetComponent<TextMeshProUGUI>().text = "- You do not have \"The Key\"!";
+
+                    doNotPassTxt.DOKill();
+                    doNotPassTxt.DOFade(1, 0.3f);
+                    doNotPassTxt.DOFade(1, 0.5f).SetDelay(2);
+                }
                 break;
 
             case "WinGameChest":

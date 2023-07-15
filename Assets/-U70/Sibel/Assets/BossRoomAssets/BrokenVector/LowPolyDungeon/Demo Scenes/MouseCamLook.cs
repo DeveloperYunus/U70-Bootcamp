@@ -223,7 +223,7 @@ public class MouseCamLook : MonoBehaviour
 
     public void ApplicationQuit()
     {
-        ApplicationQuit();
+        Application.Quit();
     }
 
 }
