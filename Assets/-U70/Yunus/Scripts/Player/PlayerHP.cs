@@ -45,7 +45,6 @@ public class PlayerHP : MonoBehaviour
     {
         if (other.CompareTag("EnemyWeapon") && other.GetComponent<EnemyWeapon>().enemyHolder.canGiveDmg)
         {
-            print("asda");
             if (Random.Range(0, 2) == 0)
                 AudioManager.ins.PlaySound("swordSlash1");
             else

@@ -32,6 +32,8 @@ public class BossHP : MonoBehaviour
     }
     public void GetDamage(float damage)
     {
+        AudioManager.ins.PlaySound("enemyHit");
+
         if (canTakeDmg)
         {
             hp -= damage - damage * armour;
@@ -51,6 +53,8 @@ public class BossHP : MonoBehaviour
     {
         if (!dead)
         {
+            AudioManager.ins.PlaySound("bossDie");
+
             dead = true;
             UIDisappear();
 

@@ -27,6 +27,11 @@ public class BossFireBall : MonoBehaviour
 
     void StopFireball()
     {
+        if (Random.Range(0, 2) == 0)
+            AudioManager.ins.PlaySound("fireBallExp1");
+        else
+            AudioManager.ins.PlaySound("fireBallExp2");
+
         coll.enabled = false;
         GetComponent<Rigidbody>().velocity = -GetComponent<Rigidbody>().velocity;
         fireBallVFX.Stop();

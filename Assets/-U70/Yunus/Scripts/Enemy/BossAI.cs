@@ -97,6 +97,8 @@ public class BossAI : MonoBehaviour
     }
     void FireBallAttack()
     {
+        AudioManager.ins.PlaySound("fireBallGo");
+
         canAtk = false;
         Invoke(nameof(ResetAtk), atkSpeedFireBall);
 
@@ -114,6 +116,8 @@ public class BossAI : MonoBehaviour
     }
     void CallSkeleton()
     {
+        AudioManager.ins.PlaySound("callSkeleton");
+
         canAtk = false;
         Invoke(nameof(ResetAtk), atkSpeedSkeletonCall);
 
@@ -125,6 +129,9 @@ public class BossAI : MonoBehaviour
     void InsSkeleton()
     {
         childTransform.SetLocalPositionAndRotation(new Vector3(0, 0.05f, 0), Quaternion.Euler(0, 5, 0));
+
+        AudioManager.ins.PlaySound("undeadRise");
+        AudioManager.ins.PlaySound("undeadRoar");
 
         for (int i = 0; i < calledEnemyCount; i++)
         {

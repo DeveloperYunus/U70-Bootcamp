@@ -27,11 +27,10 @@ public class PauseGame : MonoBehaviour
         AudioListener.volume = PlayerPrefs.GetFloat("soundVolume", 1);
 
         firstOpen = false;
-
     }
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape)) 
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
             AudioManager.ins.PlaySound("pauseMenu");
 
@@ -66,6 +65,9 @@ public class PauseGame : MonoBehaviour
     public void GoMainMenu()
     {
         AudioManager.ins.PlaySound("eKey");
+
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
 
         sceneTransPnl.DOMoveX(1000, 3).SetUpdate(true).OnComplete(() =>
         {

@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5699318295460815737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5699318295460815739}
+  - component: {fileID: 5699318295460815736}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5699318295460815739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5699318295460815737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -229.86258, y: -191.3962, z: 1705.8623}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5699318295460815736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5699318295460815737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e556e3a3c096aee44b2ca3201f92cd37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: heal
+    clip: {fileID: 8300000, guid: c48a972d3d024c2408a3331750786a29, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: pistolShoot1
+    clip: {fileID: 8300000, guid: 5ff823f546b52574a931e1d9b44290a6, type: 3}
+    volume: 0.9
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: pistolShoot2
+    clip: {fileID: 8300000, guid: a764377339b869e459f5e53fb9258f73, type: 3}
+    volume: 1
+    pitch: 0.7
+    loop: 0
+    source: {fileID: 0}
+  - name: footStep1
+    clip: {fileID: 8300000, guid: c68190f54081a7047a052dbb863bd6ea, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: footStep2
+    clip: {fileID: 8300000, guid: 223cb9f5139ebba4b85635e448d7e27b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: footStep3
+    clip: {fileID: 8300000, guid: 9cfb7a52cdbe65a46af4ae57e9a99683, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: bg1
+    clip: {fileID: 8300000, guid: fc03c384fe6ea1149a4d1a5876d43fd2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: bg2
+    clip: {fileID: 8300000, guid: ded2d11ea88d697468232cb3632f2983, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: eKey
+    clip: {fileID: 8300000, guid: 3153df3daf7e2df4cbb291cb50539391, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: playerDie
+    clip: {fileID: 8300000, guid: 2b1d18d5fcd76d34ea2bc2fe1ce21938, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: sliderBtn
+    clip: {fileID: 8300000, guid: 1be7ac83980999a469a4e06a0bfb2fed, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: forestBG
+    clip: {fileID: 8300000, guid: 03b8ccabe7e90ac43817854c691c2f8d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: oceanBG
+    clip: {fileID: 8300000, guid: b16ed8c9c2b99aa40aae6cbb45186f56, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: doorOpen
+    clip: {fileID: 8300000, guid: b3f6153a14c2c994fbc62d4cdd2d42c1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: fireUp
+    clip: {fileID: 8300000, guid: 93b51fc8e2d7a094fa0e5d751a7bab63, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: spikeTrigger
+    clip: {fileID: 8300000, guid: 9b5df570672da744c97759903248b8c8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: spikeslash
+    clip: {fileID: 8300000, guid: f6873a4d97e0cf548be617f3abe71ac0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: sail
+    clip: {fileID: 8300000, guid: bfc5ab00e6d8d29448a7bb9764634336, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: pauseMenu
+    clip: {fileID: 8300000, guid: 1bec81b3c8c4c3143a9ea687e4bce5ca, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: realoadPistol
+    clip: {fileID: 8300000, guid: 35a5b03e8c495a247a1d2e09343eb319, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: eat1
+    clip: {fileID: 8300000, guid: a8f59fb03df6a0b46919be88a8147871, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: eat2
+    clip: {fileID: 8300000, guid: ca60c12d2acb99f4092856306013b60f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ammo
+    clip: {fileID: 8300000, guid: e4523d443c947154baa9679a23acd79a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: enemyDie
+    clip: {fileID: 8300000, guid: 2a4bfc1b8fbf1824ea92ebae9de05ad6, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: enemyHit
+    clip: {fileID: 8300000, guid: 6cb49e78e410502429e70fd654842f29, type: 3}
+    volume: 0.8
+    pitch: 1.1
+    loop: 0
+    source: {fileID: 0}
+  - name: swordSwoosh1
+    clip: {fileID: 8300000, guid: dc7c55eced5d0b54cad5edfdf30911b6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: swordSwoosh2
+    clip: {fileID: 8300000, guid: b29d7d884d1b1b04587912c010719238, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: swordSlash1
+    clip: {fileID: 8300000, guid: 0a747d04b9c387d4597ef342d3ed4835, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: swordSlash2
+    clip: {fileID: 8300000, guid: 92f8008d4e8bbe14fad3149b9e05b22d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: fireBallExp1
+    clip: {fileID: 8300000, guid: 5fc0a11940ddf0c4a8f66a45a6aec6c5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: fireBallExp2
+    clip: {fileID: 8300000, guid: 05a14aae7740cf34eb0146cadf2a32cc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: bossDie
+    clip: {fileID: 8300000, guid: 2a4bfc1b8fbf1824ea92ebae9de05ad6, type: 3}
+    volume: 1
+    pitch: 0.75
+    loop: 0
+    source: {fileID: 0}
+  - name: fireBallGo
+    clip: {fileID: 8300000, guid: 213aa4be384224b4f9ebf03b7a318901, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: undeadRise
+    clip: {fileID: 8300000, guid: 5dfbeb191f5e5164b9f6a3d2d4ee1a03, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: undeadRoar
+    clip: {fileID: 8300000, guid: ba8b32e36a300054c9b33abc7658f48c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: callSkeleton
+    clip: {fileID: 8300000, guid: 744195de6752f7b409bfc48bcbc3d2e9, type: 3}
+    volume: 1
+    pitch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  currentVolume: 0
+  forestOrOceanTimer: 0
