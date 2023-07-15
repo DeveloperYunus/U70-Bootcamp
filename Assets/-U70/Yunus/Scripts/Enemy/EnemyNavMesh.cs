@@ -123,6 +123,12 @@ public class EnemyNavMesh : MonoBehaviour
     {
         if (canAtk && PlayerHP.ins.isAlive)
         {
+            if (Random.Range(0,2) == 0)
+                AudioManager.ins.PlaySound("swordSwoosh1");
+            else
+                AudioManager.ins.PlaySound("swordSwoosh2");
+
+
             skeletonChild.localEulerAngles = new Vector3(0, 0, 0);
             agent.speed = defaultSpeed * 0.5f;
 

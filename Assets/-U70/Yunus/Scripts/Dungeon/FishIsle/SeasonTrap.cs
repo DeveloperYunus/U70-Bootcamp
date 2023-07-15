@@ -35,6 +35,7 @@ public class SeasonTrap : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && !isGameFinished && pillarType !=0)
         {
+            AudioManager.ins.PlaySound("eKey");
             CheckPillar(pillarType);
         }
     }
@@ -64,22 +65,32 @@ public class SeasonTrap : MonoBehaviour
     }
     void FireUp(int pillarType)
     {
+        AudioManager.ins.PlaySound("fireUp");
+
         pillarFireVFX[pillarType - 1].Play();
     }
     void OpenGate()
     {
+        AudioManager.ins.PlaySound("doorOpen");
         isGameFinished = true;
 
         gate.DOLocalMoveY(-5, 2f);
     }
     void SpikeUp(int pillarType)
     {
+        AudioManager.ins.PlaySound("spikeTrigger");
+        Invoke(nameof(InvokeSpikeSlash), 0.1f);
+
         spikes[pillarType].DOLocalMoveZ(0, 0.3f);
 
         PlayerHP.ins.GetDamageTrap(2000, 0.5f, 20, 4);
 
         playerCapsule.DOMove(new Vector3(resetPos.position.x, playerCapsule.position.y, resetPos.position.z), 0.01f).SetDelay(resetGameTime - 0.5f);
         Invoke(nameof(ResetSeasonTrap), resetGameTime);
+    }
+    void InvokeSpikeSlash()
+    {
+        AudioManager.ins.PlaySound("spikeslash");
     }
     void ResetSeasonTrap()
     {

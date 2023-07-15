@@ -143,8 +143,16 @@ YENÝ YAPILACAKLAR - 09.07.2023
 		
 		
 LAZIM OLAN SESLER 
-	- reload pistol
-	- 
+	+ reload pistol
+	+ pause mnu açýp kapama sesi - kaðýt sesi
+	+ gemi yelken indirme kaldýrma sesi - çarþaf sesi
+	+ jump sesi
+	+ season trap - ateþ yakma sesi
+	+ season trap - kazýk saplanma sesi
+	+ season trap - kapý açýlma sesi
+	+ fish isle - testere sesi 3D
+	+ yemek yeme sesi
+	+ mermi alma sesi
 
 
 

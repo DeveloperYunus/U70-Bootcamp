@@ -35,6 +35,8 @@ public class EnemyHP : MonoBehaviour
     {
         if (enabled)
         {
+            AudioManager.ins.PlaySound("enemyHit");
+
             hp -= damage - damage * armour;
 
             if (hp <= 0)
@@ -53,6 +55,8 @@ public class EnemyHP : MonoBehaviour
     {
         if (!dead)
         {
+            AudioManager.ins.PlaySound("enemyDie");
+
             dead = true;
             UIDisappear();
 

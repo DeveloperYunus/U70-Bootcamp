@@ -39,6 +39,8 @@ public class PlayerCollect : MonoBehaviour
     {
         if (other.CompareTag("Bullet") && PistolController.ins.bullet.ammoAmount < PistolController.ins.maxPocketAmmo)
         {
+            AudioManager.ins.PlaySound("ammo");
+
             Destroy(other.gameObject);
 
             UptCollectTxt(bulletIncAmount, " Bullet", Color.grey);
@@ -47,6 +49,8 @@ public class PlayerCollect : MonoBehaviour
         }
         if (other.CompareTag("ShipBall"))
         {
+            AudioManager.ins.PlaySound("ammo");
+
             Destroy(other.gameObject);
             
             shipBall.ammoAmount += shipBallIncAmount;
@@ -55,6 +59,11 @@ public class PlayerCollect : MonoBehaviour
         }
         if (other.CompareTag("Eat") && PlayerHP.ins.hp < PlayerHP.ins.maxHealth)
         {
+            if (Random.Range(0,2)==0)
+                AudioManager.ins.PlaySound("eat1");
+            else
+                AudioManager.ins.PlaySound("eat2");
+
             Destroy(other.gameObject);
 
             PlayerHP.ins.IncreaseHP(eatHPAmount);

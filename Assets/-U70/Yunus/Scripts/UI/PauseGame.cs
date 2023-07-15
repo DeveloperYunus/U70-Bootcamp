@@ -33,6 +33,8 @@ public class PauseGame : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape)) 
         {
+            AudioManager.ins.PlaySound("pauseMenu");
+
             pausePnl.DOKill();
             pausePnl.GetComponent<RectTransform>().DOKill();
 

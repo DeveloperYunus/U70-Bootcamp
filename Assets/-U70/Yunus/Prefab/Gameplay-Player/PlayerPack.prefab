@@ -8148,11 +8148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604337775313982484, guid: 7c698a3db20636e438eafab952b9404d, type: 3}
       propertyPath: _footStepTimer
-      value: 0.1
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 6604337775313982484, guid: 7c698a3db20636e438eafab952b9404d, type: 3}
       propertyPath: _footStepRunTimer
-      value: 0.07
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6604337775313982489, guid: 7c698a3db20636e438eafab952b9404d, type: 3}
       propertyPath: m_StepOffset

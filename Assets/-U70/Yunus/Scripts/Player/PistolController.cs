@@ -158,6 +158,7 @@ public class PistolController : MonoBehaviour
     {
         if (canAtk && !isFrontWall && ammo < maxPistolAmmo && ThereIsAmmo() && PlayerHP.ins.isAlive)
         {
+            AudioManager.ins.PlaySound("realoadPistol");
             int reloadAmmo = ReloadAmmo();
 
             PlayerCollect.ins.UptAmmo(ammo - reloadAmmo);

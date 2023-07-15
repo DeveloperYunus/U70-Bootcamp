@@ -86,8 +86,10 @@ public class ShipController : MonoBehaviour
         {
             shipSpeedLvl = -1;
         }
-
-        SetShipSail();
+        else
+        {
+            SetShipSail();
+        }
     }
     void SetShipSail()
     {
@@ -99,6 +101,7 @@ public class ShipController : MonoBehaviour
         {
             case 1:
                 _moveSpeed = moveSpeed;
+                AudioManager.ins.PlaySound("sail");
 
                 SetSailScale(sailFront, false);
                 SetSailScale(sailMiddle, true);
@@ -110,6 +113,7 @@ public class ShipController : MonoBehaviour
 
             case 2:
                 _moveSpeed = moveSpeed * 2;
+                AudioManager.ins.PlaySound("sail");
 
                 SetSailScale(sailFront, true);
                 SetSailScale(sailMiddle, true);
@@ -121,6 +125,7 @@ public class ShipController : MonoBehaviour
 
             case 0:
                 _moveSpeed = 0;
+                AudioManager.ins.PlaySound("sail");
 
                 SetSailScale(sailFront, false);
                 SetSailScale(sailMiddle, false);
