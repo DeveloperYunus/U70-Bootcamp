@@ -1,5 +1,4 @@
 using DG.Tweening;
-using StarterAssets;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -36,8 +35,8 @@ public class PressEKey : MonoBehaviour
 
     private void Start()
     {
-        sceneTransition.GetComponent<RectTransform>().DOScale(1, 0);
-        sceneTransition.DOMoveX(-2000, sceneUpDownTime);
+        sceneTransition.GetComponent<RectTransform>().DOScale(1, 0).SetUpdate(true);
+        sceneTransition.DOMoveX(-2000, sceneUpDownTime).SetUpdate(true);
         isEKeyActive = false;
 
         papirusImg.alpha = 0;
@@ -113,7 +112,7 @@ public class PressEKey : MonoBehaviour
                 break;
 
             case "GoDungeon":
-                sceneTransition.DOMoveX(1000, sceneUpDownTime).OnComplete(() =>
+                sceneTransition.DOMoveX(1000, sceneUpDownTime).SetUpdate(true).OnComplete(() =>
                 {
                     SceneManager.LoadScene("BossRoom");
                 });
