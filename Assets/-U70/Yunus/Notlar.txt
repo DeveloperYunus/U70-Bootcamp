@@ -155,9 +155,6 @@ LAZIM OLAN SESLER
 	+ mermi alma sesi
 
 BUGFÝX
-	- enemy skeletonlar objelerin içinden geçiyor
-	+ Son kapý boss ölünce açýlsýn
-	- Enemylerin spawn oldukarý yerleri ayarla
 	- Boss fireball saçma bir þekilde patlýyor
 
 
