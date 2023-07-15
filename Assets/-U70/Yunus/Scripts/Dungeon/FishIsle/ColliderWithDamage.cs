@@ -15,6 +15,8 @@ public class ColliderWithDamage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioManager.ins.PlaySound("spikeslash");
+
             other.GetComponent<PlayerHP>().GetDamageTrap(2000, 0.5f, 10, 5);
 
             StopBlade();
