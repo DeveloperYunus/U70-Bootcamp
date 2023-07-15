@@ -155,9 +155,6 @@ LAZIM OLAN SESLER
 	+ mermi alma sesi
 
 BUGFÝX
-	- Boss fireball saçma bir þekilde patlýyor
-
-	- Oyundan çýkma kýsmý çalýþmýyor
 
 
 

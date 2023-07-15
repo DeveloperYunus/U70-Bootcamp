@@ -4967,7 +4967,7 @@ MonoBehaviour:
   - {fileID: 0}
   sceneTransition: {fileID: 3402973682693427238}
   sceneUpDownTime: 2
-  doNotPassTxt: {fileID: 0}
+  doNotPassTxt: {fileID: 4016002284787760267}
   winGameTxt: Now, you are free. And you know where to find us. <br><br>But do you
     want to find us?
   endGameTxt: {fileID: 6839237006357845231}

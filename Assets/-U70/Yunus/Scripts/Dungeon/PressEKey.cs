@@ -42,6 +42,8 @@ public class PressEKey : MonoBehaviour
     {
         Application.targetFrameRate = targetFPS;
 
+        doNotPassTxt.DOFade(0, 0);
+
         sceneTransition.GetComponent<RectTransform>().DOScale(1, 0).SetUpdate(true);
         sceneTransition.DOMoveX(-2000, sceneUpDownTime).SetUpdate(true);
         isEKeyActive = false;
@@ -139,7 +141,7 @@ public class PressEKey : MonoBehaviour
 
                     doNotPassTxt.DOKill();
                     doNotPassTxt.DOFade(1, 0.3f);
-                    doNotPassTxt.DOFade(1, 0.5f).SetDelay(2);
+                    doNotPassTxt.DOFade(0, 0.5f).SetDelay(2);
                 }
                 break;
 

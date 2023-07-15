@@ -14,6 +14,8 @@ public class BossFireBall : MonoBehaviour
     {
         if (other.CompareTag("Player") && other.name == "Capsule")
         {
+            print(other.tag);
+
             other.GetComponentInParent<PlayerHP>().GetDamage(damage, 0.3f, 6);
 
             StopFireball();
@@ -21,6 +23,8 @@ public class BossFireBall : MonoBehaviour
 
         if (other.CompareTag("Untagged") || other.CompareTag("Ground"))
         {
+            print(other.tag);
+
             StopFireball();
         }
     }
@@ -37,7 +41,7 @@ public class BossFireBall : MonoBehaviour
         fireBallVFX.Stop();
         fireBallExpVFX.Play();
 
-        Invoke(nameof(StopSpeed), 0.04f);
+        Invoke(nameof(StopSpeed), 0.02f);
         Destroy(gameObject, dieTime);
     }
 
