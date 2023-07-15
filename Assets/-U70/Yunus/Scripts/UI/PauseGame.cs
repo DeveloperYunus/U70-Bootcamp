@@ -23,8 +23,8 @@ public class PauseGame : MonoBehaviour
         pausePnl.GetComponent<RectTransform>().DOScale(0, 0);
         pausePnl.DOFade(0, 0);
 
-        soundSl.value = PlayerPrefs.GetFloat("soundVolume", 1);
-        AudioListener.volume = PlayerPrefs.GetFloat("soundVolume", 1);
+        soundSl.value = PlayerPrefs.GetFloat("soundVolume", 0.5f);
+        AudioListener.volume = PlayerPrefs.GetFloat("soundVolume", 0.5f);
 
         firstOpen = false;
     }

@@ -20,6 +20,9 @@ public class BossHP : MonoBehaviour
     public TextMeshProUGUI hpTxt;
     public Image hpImage;
 
+    [Header("Die Func")]
+    public Transform tresuareDoor;
+
 
     void Start()
     {
@@ -60,6 +63,9 @@ public class BossHP : MonoBehaviour
 
             GetComponent<BossAI>().Die();
             GoalController.ins.SetObjectives(4);
+
+            tresuareDoor.DORotate(new Vector3(0, -40, 0), 3f);
+            AudioManager.ins.PlaySound("doorOpen");
         }
     }
     void UIDisappear()

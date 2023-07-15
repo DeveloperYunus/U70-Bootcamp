@@ -8186,6 +8186,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 2411002004188106494}
+    - target: {fileID: 4173157857957914318, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 4173157857957914319, guid: b43d1c14f49abf743b14bfa32726f44a, type: 3}
       propertyPath: m_RootOrder
       value: 1
