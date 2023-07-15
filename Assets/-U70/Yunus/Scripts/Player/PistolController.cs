@@ -124,6 +124,12 @@ public class PistolController : MonoBehaviour
     {
         if (canAtk && !isFrontWall && ammo > 0 && PlayerHP.ins.isAlive)
         {
+            if (Random.Range(0, 2) == 0)
+                AudioManager.ins.PlaySound("pistolShoot1");
+            else
+                AudioManager.ins.PlaySound("pistolShoot2");
+
+
             pistolAnim.SetTrigger("pistolShoot");
             ShakeScreenn(0.2f, 2f, 2);
 

@@ -142,8 +142,9 @@ YENÝ YAPILACAKLAR - 09.07.2023
 	+ Chekpoint sistemi +8 bullet +%50 can
 		
 		
-BugFix
-	- SESLER EKLENECEK
+LAZIM OLAN SESLER 
+	- reload pistol
+	- 
 
 
 

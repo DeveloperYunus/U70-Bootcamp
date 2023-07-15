@@ -11,10 +11,16 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
-		//Bu alttaki kodu yunus ekledi
-		public bool isAlive = true;
+        //Bu alttakileri kodu yunus ekledi
+        [Header("--- Yunus ---")]
+        public bool isAlive = true;
+		public float _footStepTimer;
+		public float _footStepRunTimer;
 
-		[Header("Player")]
+		float footStepTimer;
+        // buraya kadar ben ekledim
+
+        [Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
@@ -117,13 +123,38 @@ namespace StarterAssets
 
 		private void Update()
 		{
-			if (isAlive) //yunus
-			{
-                JumpAndGravity();
-                GroundedCheck();
-                Move();
+			if (!isAlive) //yunus	
+				return;
+
+			JumpAndGravity();
+			GroundedCheck();
+			Move();
+			
+
+			//yunus -->
+			if (_speed < 0.5f)
+				return;
+
+            if (GameplayChange.isModeWalk && Grounded && footStepTimer < 0)
+            {
+				if (!_input.sprint)		//kosmuyorsa
+					footStepTimer = _footStepTimer;
+				else
+                    footStepTimer = _footStepRunTimer;
+
+                int a = Random.Range(0, 3);
+                if (a == 0)
+                    AudioManager.ins.PlaySound("footStep1");
+                else if (a == 1)
+                    AudioManager.ins.PlaySound("footStep2");
+                else
+                    AudioManager.ins.PlaySound("footStep3");
             }
-		}
+			else
+				footStepTimer -= Time.deltaTime;
+
+			//  <-- yunus
+        }
 
 		private void LateUpdate()
 		{

@@ -13,15 +13,21 @@ public class PauseGame : MonoBehaviour
     public RectTransform sceneTransPnl;
     public Slider soundSl;
 
+    bool firstOpen;     //slider sesi ilk baþta çalmasýn diye
+
     private void Start()
     {
         isPaused = false;
+        firstOpen = true;
 
         pausePnl.GetComponent<RectTransform>().DOScale(0, 0);
         pausePnl.DOFade(0, 0);
 
-        AudioListener.volume = PlayerPrefs.GetFloat("soundVolume", 1);
         soundSl.value = PlayerPrefs.GetFloat("soundVolume", 1);
+        AudioListener.volume = PlayerPrefs.GetFloat("soundVolume", 1);
+
+        firstOpen = false;
+
     }
     private void Update()
     {
@@ -57,14 +63,20 @@ public class PauseGame : MonoBehaviour
 
     public void GoMainMenu()
     {
+        AudioManager.ins.PlaySound("eKey");
+
         sceneTransPnl.DOMoveX(1000, 3).SetUpdate(true).OnComplete(() =>
         {
             SceneManager.LoadScene("MainMenuScene");
-        });
-        
+        });   
     }
     public void SetSoundVolume()
     {
+        if (!firstOpen)
+        {
+            AudioManager.ins.PlaySound("sliderBtn");
+        }      
+
         PlayerPrefs.SetFloat("soundVolume", soundSl.value);
         AudioListener.volume = soundSl.value;
     }

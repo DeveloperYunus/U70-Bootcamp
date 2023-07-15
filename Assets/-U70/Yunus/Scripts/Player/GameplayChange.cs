@@ -64,6 +64,8 @@ public class GameplayChange : MonoBehaviour
 
         if (isEKeyActive && Input.GetKeyDown(KeyCode.E) && eKeyTimer)
         {
+            AudioManager.ins.PlaySound("eKey");
+
             ChangePlayMode();
         }
     }
@@ -100,6 +102,7 @@ public class GameplayChange : MonoBehaviour
             isModeWalk = true;
             ShowPlayer();
         }
+        GetComponent<GameplaySoundChanger>().ChangeBGTypeForGameplay(!isModeWalk);
 
         eKeyTimer = false;
         Invoke(nameof(TurnTrueEKey), cmBrain.m_DefaultBlend.m_Time);

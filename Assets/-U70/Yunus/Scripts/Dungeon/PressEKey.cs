@@ -79,6 +79,8 @@ public class PressEKey : MonoBehaviour
 
     void EKeyFunction()
     {
+        AudioManager.ins.PlaySound("eKey");
+
         switch (eKeyFunction)
         {
             case "FishIsleChest":

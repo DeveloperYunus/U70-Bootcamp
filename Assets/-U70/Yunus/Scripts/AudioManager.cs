@@ -7,8 +7,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager ins;
     [HideInInspector] public float currentVolume;       //bu her ses ayarýnda güncellensin
 
-    public static bool inCave;                          //magaranýn içindemiyiz dýþýndamýyýz
-    [HideInInspector] public float inCaveTimer;         //magaraya girince hesaplamalarý ksýtlý süreliðine yapmasý için süre sayacý
+    public static bool onOceon;                          //magaranýn içindemiyiz dýþýndamýyýz
+    [HideInInspector] public float forestOrOceanTimer;         //magaraya girince hesaplamalarý ksýtlý süreliðine yapmasý için süre sayacý
     float bgTimer;                                      //background müziklerinin timer kýsmý sayacý 
     float inCaveSound;
     string currentBGMelody;
@@ -39,7 +39,7 @@ public class AudioManager : MonoBehaviour
         currentVolume = PlayerPrefs.GetFloat("soundVolume", 0.5f);
 
         inCaveSound = 0;
-        inCaveTimer = 0;
+        forestOrOceanTimer = 0;
     }
     private void Update()
     {
@@ -48,38 +48,39 @@ public class AudioManager : MonoBehaviour
             int a = UnityEngine.Random.Range(0,2);
             if (a == 0)
             {
-                bgTimer = GetClip("Forest1").length;
-                PlaySound("Forest1");
-               currentBGMelody = "Forest1";
+                bgTimer = GetClip("bg1").length;
+                PlaySound("bg1");
+                currentBGMelody = "bg1";
             }
             else
             {
-                bgTimer = GetClip("Forest2").length;
-                PlaySound("Forest2");
-                currentBGMelody = "Forest2";
+                bgTimer = GetClip("bg2").length;
+                PlaySound("bg2");
+                currentBGMelody = "bg2";
             }
         }
         else 
             bgTimer -= Time.deltaTime;
 
-        if (inCaveTimer > 0)
+        if (forestOrOceanTimer > 0)
         {
-            inCaveTimer -= Time.deltaTime;
+            forestOrOceanTimer -= Time.deltaTime;
 
-            if (inCave)
+            if (onOceon)
             {
-                inCaveSound = Mathf.Lerp(inCaveSound, 1, 0.06f);
-                PlaySoundOne("Cave");
+                inCaveSound = Mathf.Lerp(inCaveSound, 1, 0.04f);
+                PlaySoundOne("oceanBG");
 
-                SetSound(currentBGMelody, (1 - inCaveSound) * currentVolume);             //mevcut bg yi sýfýra doðru götür
-                SetSound("Cave", inCaveSound * currentVolume);
+                SetSound("forestBG", (1 - inCaveSound) * currentVolume);             //mevcut bg yi sýfýra doðru götür
+                SetSound("oceanBG", inCaveSound * currentVolume);
             }
             else
             {
-                inCaveSound = Mathf.Lerp(inCaveSound, 0, 0.06f);
+                inCaveSound = Mathf.Lerp(inCaveSound, 0, 0.04f);
+                PlaySoundOne("forestBG");
 
-                SetSound(currentBGMelody, (1 - inCaveSound) * currentVolume);
-                SetSound("Cave", inCaveSound * currentVolume);
+                SetSound("forestBG", (1 - inCaveSound) * currentVolume);
+                SetSound("oceanBG", inCaveSound * currentVolume);
             }
         }
     }

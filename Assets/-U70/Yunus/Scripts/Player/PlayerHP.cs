@@ -84,6 +84,8 @@ public class PlayerHP : MonoBehaviour
     }
     public void IncreaseHP(float value)
     {
+        AudioManager.ins.PlaySound("heal");
+
         hp += value;
         incHPEffect.Play();
 
@@ -100,6 +102,8 @@ public class PlayerHP : MonoBehaviour
     {
         if (isAlive)
         {
+            AudioManager.ins.PlaySound("playerDie");
+
             isAlive = false;
             GetComponent<FirstPersonController>().isAlive = false;
 
