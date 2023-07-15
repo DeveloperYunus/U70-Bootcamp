@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using TMPro;
 
 public class RestApi : MonoBehaviour
 {
    private string URL = "https://64b1ac45062767bc48268582.mockapi.io/PirateGames";
 
-    public Text NameText;
-    public Text FactsText;
+    public TMP_Text UpdateText;
+    public TMP_Text ExplanationText;
     public int index;
     void Start()
     {
@@ -27,8 +28,8 @@ public class RestApi : MonoBehaviour
         {
             string json = request.downloadHandler.text;
             SimpleJSON.JSONNode stats = SimpleJSON.JSON.Parse(json);
-            NameText.text = "Name:" + stats[index]["name"];
-            FactsText.text = "Facts:" + stats[index]["facts"];
+            UpdateText.text = "Update Version:" + stats[index]["update"];
+            ExplanationText.text = "Explanation:" + stats[index]["explanation"];
         }
 
       

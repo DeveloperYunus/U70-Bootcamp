@@ -8,7 +8,7 @@ public class MouseCamLook : MonoBehaviour
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
-    public GameObject MainMenuCanvas, QuitGameMenu, DoorQuitGameMenu, StartMenu, CreditsMenu, MapMenu, BottleMenu;
+    public GameObject MainMenuCanvas, QuitGameMenu, DoorQuitGameMenu, StartMenu, CreditsMenu, MapMenu, BottleMenu, AboutMenu;
     bool bookOpened = false, book = false, door = false, desk =false, bottle= false;
     public AudioSource MainMenuMusic;
     public Slider MusicSlider, SoundSlider;
@@ -168,6 +168,16 @@ public class MouseCamLook : MonoBehaviour
     public void OpenCreditsMenu()
     {
         CreditsMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
+
+    }
+
+    public void CloseAboutMenu()
+    {
+        AboutMenu.transform.DOScale(new Vector3(0, 0, 0), 1).OnComplete(() => AboutMenu.SetActive(false));
+    }
+    public void OpenAboutMenu()
+    {
+        AboutMenu.transform.DOScale(new Vector3(2, 2, 2), 1);
 
     }
 
