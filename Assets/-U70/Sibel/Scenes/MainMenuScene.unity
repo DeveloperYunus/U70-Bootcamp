@@ -774,7 +774,9 @@ MonoBehaviour:
 
     *Game Developer
 
-    *Sound Designer'
+    *Sound Designer
+
+    *Game Designer'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
   m_sharedMaterial: {fileID: -6405258435631267391, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
@@ -2756,7 +2758,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1949439793}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
       propertyPath: m_RootOrder
@@ -2764,11 +2766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.38062644
+      value: 0.38062638
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.38062644
+      value: 0.3806264
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
       propertyPath: m_LocalScale.z
@@ -2816,7 +2818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
       propertyPath: m_Name
-      value: model
+      value: Pistol
       objectReference: {fileID: 0}
     - target: {fileID: 5175969791089040699, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2824,6 +2826,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0b6c43a8cb07eea4badbc1e09132e643, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
+--- !u!4 &427983506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c11c6dfef8a66924eb6669a174900229, type: 3}
+  m_PrefabInstance: {fileID: 427983505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &430317252
 GameObject:
   m_ObjectHideFlags: 0
@@ -4913,7 +4920,9 @@ MonoBehaviour:
 
     *Level Designer
 
-    *Game Artist'
+    *Game Artist
+
+    *GameDesigner'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
   m_sharedMaterial: {fileID: -6405258435631267391, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
@@ -5537,18 +5546,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "My dear boy,\nThe long wait in this cove has finally come to an end. We
-    have received news from Him at last. The whole team is gathering, the best pirates.
-    We are establishing our own freedom city, a pirate utopia where a pirate can
-    live freely and lawlessness is the norm. But you know, we pirates can quickly
-    turn utopias into dystopias, so you better hurry. I won't simply tell you where
-    you will come to, after all these years if you managed to find this cove again,
-    it means you're progressing on the path to becoming a good pirate. I've left
-    clues for you on the island, follow the clues on the road to utopia, and let
-    your adventure reach the oceans. Of course, I'll have a few surprises for you.
-    You know, after all these damn years in this cursed cove, I have a good relationship
-    with skeletons. Haha. \n\n                              Best Regards,\n                                 
-    Jack"
+  m_text: "     My dear boy,\nThe long wait in this cove has finally come to an end.
+    We have received news from Him at last. The whole team is gathering, the best
+    pirates. We are establishing our own freedom city, a pirate utopia where a pirate
+    can live freely and lawlessness is the norm. \n\nBut you know, we pirates can
+    quickly turn utopias into dystopias, so you better hurry. I won't simply tell
+    you where you will come to, after all these years if you managed to find this
+    cove again, it means you're progressing on the path to becoming a good pirate.
+    \n\nI've left clues for you on the island, follow the clues on the road to utopia,
+    and let your adventure reach the oceans. Of course, I'll have a few surprises
+    for you. \n\nYou know, after all these damn years in this cursed cove, I have
+    a good relationship with skeletons. Haha. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
   m_sharedMaterial: {fileID: -6405258435631267391, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
@@ -5691,7 +5699,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991872521
 GameObject:
@@ -5849,7 +5857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995906966}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Dungeon Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5862,7 +5870,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995906965}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6174,8 +6182,8 @@ Transform:
   - {fileID: 8100850555803012166}
   - {fileID: 4342466856162203290}
   - {fileID: 2137709007762386553}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1949439793}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996621767
 GameObject:
@@ -6340,11 +6348,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1949439793}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
       propertyPath: m_LocalScale.x
@@ -6352,11 +6360,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.051516797
+      value: 0.051516794
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.051516797
+      value: 0.051516794
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6400,7 +6408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
       propertyPath: m_Name
-      value: Bottiglia
+      value: Bottle
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
       propertyPath: m_TagString
@@ -6408,6 +6416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
+--- !u!4 &1003689158 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bf081af7881188240a8a1c03db13e83b, type: 3}
+  m_PrefabInstance: {fileID: 1003689157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1031812731
 GameObject:
   m_ObjectHideFlags: 0
@@ -6990,7 +7003,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160, y: -116}
+  m_AnchoredPosition: {x: 115.6, y: -119.7}
   m_SizeDelta: {x: 123.875, y: 19.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097736958
@@ -7013,7 +7026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jack's Home
+  m_text: Barbaros's Home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
   m_sharedMaterial: {fileID: -6405258435631267391, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
@@ -7047,7 +7060,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7561,7 +7574,7 @@ RectTransform:
   - {fileID: 832530208}
   - {fileID: 589546405}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -82.443}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10650,6 +10663,43 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1949439792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1949439793}
+  m_Layer: 0
+  m_Name: Environment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1949439793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949439792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 995906966}
+  - {fileID: 8194228411525329387}
+  - {fileID: 427983506}
+  - {fileID: 1003689158}
+  - {fileID: 8252746132769802115}
+  - {fileID: 1978172702}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1955345806
 GameObject:
   m_ObjectHideFlags: 0
@@ -11146,7 +11196,7 @@ GameObject:
   - component: {fileID: 1978172701}
   - component: {fileID: 1978172703}
   m_Layer: 0
-  m_Name: WhatsApp Image 2023-07-13 at 16.59.48
+  m_Name: Map
   m_TagString: Desk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11213,11 +11263,11 @@ Transform:
   m_GameObject: {fileID: 1978172700}
   m_LocalRotation: {x: -0.00075903, y: -0.23969163, z: -0.9708439, w: 0.0030743661}
   m_LocalPosition: {x: 33.76, y: 5.089, z: -125.405}
-  m_LocalScale: {x: 0.06291447, y: 0.06291447, z: 0.06291447}
+  m_LocalScale: {x: 0.062914476, y: 0.06291447, z: 0.06291447}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1949439793}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -27.737, y: 0, z: -179.637}
 --- !u!65 &1978172703
 BoxCollider:
@@ -42846,8 +42896,8 @@ Transform:
   - {fileID: 5513274526457160852}
   - {fileID: 5513274526656993426}
   - {fileID: 5513274527368318666}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1949439793}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 92.065, z: 0}
 --- !u!33 &8201219203878476008
 MeshFilter:
@@ -43068,8 +43118,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1949439793}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &8252746132812860420
 Light:
@@ -43374,6 +43424,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.712
       objectReference: {fileID: 0}
+    - target: {fileID: 8358542452837294463, guid: 9dd8a3227dc0aa84099496d08718ad7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7b29126e23ac86146944c636c722e7b8, type: 2}
     - target: {fileID: 8358542453020051031, guid: 9dd8a3227dc0aa84099496d08718ad7b, type: 3}
       propertyPath: m_Enabled
       value: 1

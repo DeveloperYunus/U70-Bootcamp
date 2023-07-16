@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b7f109dc7ae014aa40f5d9385a150f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 10
+  attackDamage: 8
   attackSpeed: 1
   atkLookTargetTime: 0.2
   skeletonChild: {fileID: 3413120491057915690}
@@ -276,13 +276,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cfa80f99a1c4fe42ad2f7388341e6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  armour: 0.1
+  maxHealth: 15
+  armour: 0.15
   hpCanvas: {fileID: 3413120489895858408}
   hpTxt: {fileID: 3413120489917080174}
   hpImage: {fileID: 3413120490545295768}
   dropRate: 50
-  bulletDieTime: 2
+  bulletDieTime: 4
 --- !u!1 &3413120489895858409
 GameObject:
   m_ObjectHideFlags: 0

@@ -135,7 +135,8 @@ public class BossAI : MonoBehaviour
 
         for (int i = 0; i < calledEnemyCount; i++)
         {
-            Vector3 spawnPos = new(transform.position.x + Random.Range(-callRange, callRange), transform.position.y - 2, transform.position.z + Random.Range(-callRange, callRange));
+            Vector3 spawnPos = new(transform.position.x + Random.Range(0, callRange), transform.position.y - 2, transform.position.z + Random.Range(-callRange, callRange));
+            //random.range(x=0,range); yaptýk çünkü x negativde korkuluk var ve iskeletlerin aþaðýdan çýktýklarý gözüküyor 
 
             Instantiate(callCircle, spawnPos + new Vector3(0, 2.1f, 0), Quaternion.Euler(90, 0, 0));
             GameObject skeleton = Instantiate(enemy, spawnPos, Quaternion.Euler(0, Random.Range(0, 360), 0));

@@ -61,9 +61,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4101243709229051385, guid: 8d68df292e1271742924bca361b21609, type: 3}
   ammoTxt: {fileID: 3757357301532790768}
   bullet: {fileID: 11400000, guid: 2dcdcd94ea6423140a764821f11012b7, type: 2}
-  bulletDamage: 40
+  bulletDamage: 10
   maxPistolAmmo: 4
-  maxPocketAmmo: 20
+  maxPocketAmmo: 24
   fpsCam: {fileID: 0}
   range: 35
 --- !u!1 &3757357299651290704
@@ -8093,6 +8093,14 @@ PrefabInstance:
     - target: {fileID: 828958185, guid: 7c698a3db20636e438eafab952b9404d, type: 3}
       propertyPath: moveTime
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721857947, guid: 7c698a3db20636e438eafab952b9404d, type: 3}
+      propertyPath: eatHpPercent
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744128300, guid: 7c698a3db20636e438eafab952b9404d, type: 3}
+      propertyPath: armour
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1744128300, guid: 7c698a3db20636e438eafab952b9404d, type: 3}
       propertyPath: goCheckPointPosTime

@@ -154,14 +154,12 @@ LAZIM OLAN SESLER
 	+ yemek yeme sesi
 	+ mermi alma sesi
 
-BUGFÝX
-
 
 
 
 Notlar
 1- oyunu mobilde oynayacaðýmýz için player controller scriptindeki "Rotation Speed" deðiþkenini 0.2f deðerine almamýz lazým. ben þimdi bilisayarda test ettiðimden 1f deðerinde kalsýn.
-2- Oyun çýktý alýnacaðý zaman 60 fps'e sýnýrlandýrýlmalý  
+2- Oyun çýktý alýnacaðý zaman 60 fps'e sýnýrlandýrýlmalý
 
 
 
