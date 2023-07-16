@@ -70,7 +70,7 @@ public class PlayerHP : MonoBehaviour
         }
 
         hpImage.fillAmount = hp / maxHealth;
-        hpTxt.text = hp.ToString();
+        hpTxt.text = hp.ToString("#");
     }
     public void GetDamageTrap(float damage, float shakeTime, float amplitude, float shakeFre)
     {
@@ -85,7 +85,7 @@ public class PlayerHP : MonoBehaviour
         }
 
         hpImage.fillAmount = hp / maxHealth;
-        hpTxt.text = hp.ToString();
+        hpTxt.text = hp.ToString("#");
     }
     public void IncreaseHP(float value)
     {
@@ -100,7 +100,7 @@ public class PlayerHP : MonoBehaviour
         }
 
         hpImage.fillAmount = hp / maxHealth;
-        hpTxt.text = hp.ToString();
+        hpTxt.text = hp.ToString("#");
     }
 
     void Die()

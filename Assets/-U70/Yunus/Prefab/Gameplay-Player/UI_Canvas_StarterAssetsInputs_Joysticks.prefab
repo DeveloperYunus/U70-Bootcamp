@@ -4954,8 +4954,8 @@ MonoBehaviour:
   targetFPS: 240
   papirusImg: {fileID: 1420947499212322353}
   papirusTxt: {fileID: 651762000}
-  goTowerIsleTxt: 'Dear pirate friend, you must go to the old tower isle, if you
-    want to find great pirate tresure. <br><br>Good luck on your path '
+  goTowerIsleTxt: 'You must go to the old tower isle, if you want to find a path
+    for freedom. <br><br>Good luck on your path '
   transitionTime: 2
   playerCapsule: {fileID: 0}
   goCastleIsleTxt: '"The Key" <br><br> and a message <br><br>LONG LIVE THE DEAD PIRATE'

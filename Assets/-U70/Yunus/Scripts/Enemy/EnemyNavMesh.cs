@@ -100,7 +100,7 @@ public class EnemyNavMesh : MonoBehaviour
 
         //animator.SetTrigger("Fall1");         //ölme animasyonu - gerek yok ragdoll ile hallettik
 
-        transform.DOMoveY(transform.position.y - 8, 1).SetDelay(2.5f);
+        transform.DOMoveY(transform.position.y - 11, 1).SetDelay(2.5f);
 
         Destroy(gameObject, 3.5f);
     }
