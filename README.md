@@ -151,19 +151,19 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 **Ürün Durumu**: Ekran görüntüleri:
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-0.png" width="550" alt="Resim 1" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-1.png" width="550" alt="Resim 2" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-0.png" width="500" alt="Resim 1" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-1.png" width="500" alt="Resim 2" /> 
 </p>
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-2.png" width="550" alt="Resim 1" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-3.png" width="550" alt="Resim 2" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-2.png" width="500" alt="Resim 3" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-3.png" width="500" alt="Resim 4" /> 
 </p>
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-4.png" width="200" alt="Resim 1" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-5.png" width="200" alt="Resim 2" /> 
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-6.png" width="200" alt="Resim 2" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-4.png" width="300" alt="Resim 5" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-5.png" width="300" alt="Resim 6" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-6.png" width="300" alt="Resim 7" /> 
 </p>
 
 
