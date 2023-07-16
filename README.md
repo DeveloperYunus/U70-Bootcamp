@@ -151,16 +151,21 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 **Ürün Durumu**: Ekran görüntüleri:
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-0.png" width="400" alt="Resim 1" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-1.png" width="400" alt="Resim 2" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-0.png" width="550" alt="Resim 1" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-1.png" width="550" alt="Resim 2" /> 
 </p>
 
-<img width="783" alt="Oyun_1" src="">
-<img width="783" alt="Oyun_2" src="">
-<img width="783" alt="Oyun_3" src="">
-<img width="783" alt="Oyun_4" src="">
-<img width="783" alt="Oyun_5" src="">
-<img width="783" alt="Oyun_5" src="">
+<p align="center">
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-2.png" width="550" alt="Resim 1" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-3.png" width="550" alt="Resim 2" /> 
+</p>
+
+<p align="center">
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-4.png" width="200" alt="Resim 1" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-5.png" width="200" alt="Resim 2" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-6.png" width="200" alt="Resim 2" /> 
+</p>
+
 
 **Sprint Review**:
 - Terraindeki tüm detaylar texture boyamaları ve koy'un etrafındaki ayrıntılar tamamlandı. Tüm adaların etrafı player denize düşmesin diye collider ile dönüldü.
