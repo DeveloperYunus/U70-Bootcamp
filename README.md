@@ -11,22 +11,21 @@ Unity U70 - Pirate Game
 
 ## Ürün İsmi
 
-Pirate's Treasure
+Pirate's Story
 
 ## Açıklama
 
-"Pirate's Treasure", heyecan dolu bir macera oyunudur. Dört farklı ziyaret edilebilir adada korsan olarak yolculuk yapacak ve büyük bir hazineye ulaşmak için mücadele edeceksiniz. Her adada sizi bekleyen bulmacaları çözerek ilerlerken, dikkatli olmanız gereken bubi tuzakları ve ateş eden düşman iskeletlerle karşılaşacaksınız. İlk adada bulunan bir harita, size diğer adaları gösterecek ve hazineye giden yolu açacak. Ancak her adada farklı engeller ve bulmacalarla karşılaşacaksınız. Son ada ise sizi zorlu bir dungeon'a götürecek. İskeletlere karşı savaşarak ilerler ve son bulmacayı çözerek büyük hazineye ulaşabilirsiniz. Korsanınızın mutlu mesut yaşamasını sağlamak sizin elinizde!
+"Pirate's Story", heyecan dolu bir macera oyunudur. Dört farklı ziyaret edilebilir adada korsan olarak yolculuk yapacak ve özgürlüğüne ulaşmak için mücadele edeceksiniz. Adalarda sizi bekleyen bulmacaları çözerek ilerlerken, dikkatli olmanız gereken bubi tuzakları ve sizi de kendi aralarına katmak için can atan iskeletlerle karşılaşacaksınız. İlk adada bulunan bilgi, size diğer adaları gösterecek ve özgürlüğe giden yolu açacak. Son ada ise sizi zorlu bir dungeon'a götürecek. İskeletlere karşı savaşarak ilerlemeli ve en büyük Korsan Kaptan'ı yenmelisiniz. Korsanınızın mutlu mesut yaşamasını sağlamak sizin elinizde!
 
 ## Özellikler
 
 - Dört ziyaret edilebilir ada
-- Menzilli savaş mekanikleri: İskeletlere karşı kendinizi koruyabilmek için menzilli silahları kullanın.
-- Bulmacalar ve bubi tuzakları: Her adada sizi bekleyen bulmacaları çözün ve dikkatli olun, çünkü bubi tuzaklarıyla karşılaşabilirsiniz.
-- Ateş eden düşman iskeletler: Adalarda size saldıran düşman iskeletlere karşı mücadele edin.
-- Haritalar: İlk adada bulduğunuz harita, size diğer adaları gösterecek ve hazineye ulaşmanızı sağlayacak.
-- Dungeon: Son adada zorlu bir dungeon'a girerek daha fazla iskeletle savaşın ve hazineyi ele geçirmek için son bulmacayı çözün.
-- Mobil platform uyumu: "Korsanın Hazinesi", mobil platformda oynamak için uygun ve keyifli bir oyun deneyimi sunuyor.
-- Low poly grafikler: Oyunun low poly stili, görsel olarak çarpıcı bir atmosfer yaratırken mobil cihazlarda da performanslı bir şekilde oynanabilir.
+- Menzilli savaş mekanikleri: İskeletlere karşı kendinizi koruyabilmek için menzilli silahınızı kullanın.
+- Bulmacalar ve bubi tuzakları: Adalarda sizi bekleyen bulmacaları çözün ve dikkatli olun, çünkü bubi tuzaklarıyla karşılaşabilirsiniz.
+- Düşman iskeletler: Adalarda size saldıran düşman iskeletlere karşı mücadele edin.
+- Adalar: İlk adada bulduğunuz bilgi, size diğer adaları gösterecek ve hedefinize ulaşmanızı sağlayacak.
+- Dungeon: Son adada zorlu bir dungeon'a girerek daha fazla iskeletle savaşın ve BOSS'u yenin.
+- Low poly grafikler: Oyunun low poly stili, görsel olarak daha yumuşak bir atmosfer oluşturuken mobil cihazlarda da performanslı bir şekilde oynanabilir.
 
 # Product Backlog URL
 https://trello.com/b/pG5QBqf4/u70-kanban
@@ -34,7 +33,7 @@ https://trello.com/b/pG5QBqf4/u70-kanban
 ---
 # Ürünün özellikleri
 
-- Pirate's Treasure aksiyon-macera türünde,
+- Pirate's Story aksiyon-macera türünde,
 - First Person Shooter oynanışında,
 - Üç boyutlu,
 - Low poly grafikler kullananan,
