@@ -45,7 +45,7 @@ public class PressEKey : MonoBehaviour
         doNotPassTxt.DOFade(0, 0);
 
         sceneTransition.GetComponent<RectTransform>().DOScale(1, 0).SetUpdate(true);
-        sceneTransition.DOMoveX(-2000, sceneUpDownTime).SetUpdate(true);
+        sceneTransition.DOMoveX(-2000, sceneUpDownTime).SetUpdate(true).SetDelay(3f);
         isEKeyActive = false;
 
         papirusImg.alpha = 0;
@@ -117,8 +117,8 @@ public class PressEKey : MonoBehaviour
                 playerCapsule.DOMove(pos[3].position, transitionTime).OnComplete(() => PlayerHP.ins.StopOrContinueMove(true));
                 break;
 
-            case "TowerIsleChest":                
-                Destroy(keyObj);
+            case "TowerIsleChest":
+                keyObj.SetActive(false);
                 isPlayerHadKey = true;
 
                 OpenPapirusImg(goCastleIsleTxt);

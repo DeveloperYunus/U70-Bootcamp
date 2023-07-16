@@ -261,5 +261,17 @@ MonoBehaviour:
     pitch: 0.9
     loop: 0
     source: {fileID: 0}
+  - name: laugh
+    clip: {fileID: 8300000, guid: 3ebf0e22c2fb6c247949d73de5b0d3f8, type: 3}
+    volume: 1
+    pitch: 1.2
+    loop: 0
+    source: {fileID: 0}
+  - name: jump
+    clip: {fileID: 8300000, guid: de82cd0b8811b674397dec9b5b78276a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   currentVolume: 0
   forestOrOceanTimer: 0

@@ -587,7 +587,7 @@ RectTransform:
   m_Children:
   - {fileID: 486958206}
   m_Father: {fileID: 1084265159}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5186,9 +5186,8 @@ MonoBehaviour:
     I've left clues for you on the island, follow the clues on the road to utopia,
     and let your adventure reach the oceans. Of course, I'll have a few surprises
     for you. You know, after all these damn years in this cursed cove, I have a good
-    relationship with skeletons. Haha.\n\n                                                       
-    Pirate Captan,\n                                                            
-    Jack"
+    relationship with skeletons. Haha.\n\n                                                      
+    Pirate Captan\n                                                             Jack"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b32c7e59aeecda4cb92946841b2fe02, type: 2}
   m_sharedMaterial: {fileID: -3140469772111587377, guid: 0b32c7e59aeecda4cb92946841b2fe02, type: 2}
@@ -6823,9 +6822,9 @@ RectTransform:
   - {fileID: 272151504}
   - {fileID: 1703341305}
   - {fileID: 965648207}
-  - {fileID: 1097736957}
   - {fileID: 2119217478}
   - {fileID: 135900870}
+  - {fileID: 1097736957}
   - {fileID: 1870715725}
   m_Father: {fileID: 1226409653}
   m_RootOrder: 4
@@ -7001,7 +7000,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1084265159}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12071,7 +12070,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1084265159}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

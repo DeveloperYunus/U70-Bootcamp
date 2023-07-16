@@ -685,7 +685,7 @@ MonoBehaviour:
   - DUNGEON
   - TREASURE
   objective:
-  - '- Go to isle dock <br>- Find map chest'
+  - '- Go to isle dock <br>- Find info chest'
   - '- Go to isle tower isle <br>- Find Old Castle ''s dungeon key'
   - '- Go to Old Castle <br>- Survive and reach the dungeon door.'
   - '- Find great pirate treasure '
