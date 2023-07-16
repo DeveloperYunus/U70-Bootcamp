@@ -50777,6 +50777,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3049172897284979696, guid: 89dc5c8970d29344ea7ec87430569111, type: 3}
+      propertyPath: objective.Array.data[0]
+      value: '- Go to isle dock <br>- Find info chest'
+      objectReference: {fileID: 0}
     - target: {fileID: 6041690387064315680, guid: 89dc5c8970d29344ea7ec87430569111, type: 3}
       propertyPath: m_Name
       value: UI_Canvas_StarterAssetsInputs_Joysticks

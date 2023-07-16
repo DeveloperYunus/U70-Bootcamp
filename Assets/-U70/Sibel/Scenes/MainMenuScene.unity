@@ -587,7 +587,7 @@ RectTransform:
   m_Children:
   - {fileID: 486958206}
   m_Father: {fileID: 1084265159}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5187,7 +5187,8 @@ MonoBehaviour:
     and let your adventure reach the oceans. Of course, I'll have a few surprises
     for you. You know, after all these damn years in this cursed cove, I have a good
     relationship with skeletons. Haha.\n\n                                                       
-    Best Regars,\n                                                             Jack"
+    Pirate Captan,\n                                                            
+    Jack"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b32c7e59aeecda4cb92946841b2fe02, type: 2}
   m_sharedMaterial: {fileID: -3140469772111587377, guid: 0b32c7e59aeecda4cb92946841b2fe02, type: 2}
@@ -5500,7 +5501,7 @@ GameObject:
   - component: {fileID: 965648209}
   - component: {fileID: 965648208}
   m_Layer: 5
-  m_Name: Text (TMP) (3)
+  m_Name: StoryTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5519,11 +5520,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1084265159}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -94.83007, y: -46.49951}
+  m_AnchoredPosition: {x: -94.83007, y: -39.9}
   m_SizeDelta: {x: 180.0798, y: 275.1517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &965648208
@@ -5556,7 +5557,8 @@ MonoBehaviour:
     \n\nI've left clues for you on the island, follow the clues on the road to utopia,
     and let your adventure reach the oceans. Of course, I'll have a few surprises
     for you. \n\nYou know, after all these damn years in this cursed cove, I have
-    a good relationship with skeletons. Haha. "
+    a good relationship with skeletons. Haha.                  \n\t\t\t\n     \t\tPirate
+    Captan Jack"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
   m_sharedMaterial: {fileID: -6405258435631267391, guid: 1a26496808046cb419c00a1736f9f379, type: 2}
@@ -6820,10 +6822,10 @@ RectTransform:
   - {fileID: 538786542}
   - {fileID: 272151504}
   - {fileID: 1703341305}
-  - {fileID: 2119217478}
-  - {fileID: 135900870}
   - {fileID: 965648207}
   - {fileID: 1097736957}
+  - {fileID: 2119217478}
+  - {fileID: 135900870}
   - {fileID: 1870715725}
   m_Father: {fileID: 1226409653}
   m_RootOrder: 4
@@ -6980,7 +6982,7 @@ GameObject:
   - component: {fileID: 1097736959}
   - component: {fileID: 1097736958}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: HomeTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6999,7 +7001,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1084265159}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9475,7 +9477,7 @@ GameObject:
   - component: {fileID: 1703341307}
   - component: {fileID: 1703341306}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Topic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9498,7 +9500,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97.5, y: 94}
+  m_AnchoredPosition: {x: -97.5, y: 100.59952}
   m_SizeDelta: {x: 174.7436, y: 36.8524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1703341306
@@ -10300,8 +10302,8 @@ RectTransform:
   m_GameObject: {fileID: 1870715724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1522641642}
   m_Father: {fileID: 1084265159}
@@ -10309,7 +10311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.4363, y: 139.11}
+  m_AnchoredPosition: {x: 0.4363, y: 142.4}
   m_SizeDelta: {x: 196.9979, y: 42.028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870715726
@@ -12069,7 +12071,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1084265159}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
