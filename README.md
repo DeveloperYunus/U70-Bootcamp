@@ -96,7 +96,7 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Puan tamamlama mantığı**: 1. Sprintteki -60 puanı telafi etmek için hem fazladan 20 puan eklenmiş hemde kapsamda daralmaya gidilmiştir.
 
-**Backlog Düzeni**: Backloglarımız projenin tüm ana mekaniklerinin ve seviye tasarımalrının tamamlaması ve sprint sonunda oynanabilir bir oyun oluşması yönündedir. (terrain ile adaların yapılması ve ek level tasarımlarının bitirlmesi, enemy AI, boss AI, player movement-attack, gemi movement ve player ada-gemi oynanış geçiş sistemlerinin tamamlanması)
+**Backlog Düzeni**: Backloglarımız projenin tüm ana mekaniklerinin ve seviye tasarımalrının tamamlaması ve sprint sonunda oynanabilir bir oyun oluşması yönündedir. (terrain ile adaların yapılması ve ek level tasarımlarının bitirilmesi, enemy AI, boss AI, player movement-attack, gemi movement ve player ada-gemi oynanış geçiş sistemlerinin tamamlanması)
 
 **Daily Scrum**: Ekipteki üye sayısın hatırı sayılır ölçüde azalmasından daily scrum toplantıları günlük watsapp üzerinden metin iletişimi ve 2 günde bir discord üzerinden genel fikir alışverişi yapılarak gerçekleştirilmiştir.
 
@@ -123,4 +123,52 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint Retrospective:**
 - Sprintin başında kararlaştırılan ilerlemeye ulaşılamadı (iş gücünün azalmasından dolayı). 3. sprint için ilk hafta oyunun tamamen bitirilmesi gerekmekte. Bunun için kapsamda daralmaya gidildi. Son hafta ile oyun test edilecek ve video çekilecek.
+
+---
+
+# Sprint 3
+
+**Sprint Notları**: Toplantı notları ve puanlar backlog itemların açıklama kısmına eklendi.
+
+**1. Sprintte tamamalan puan**: 60 (çeşitli sebeplerden ötürü gerçekleştirilemeyen görevler yüzünden hedeşlenen -120- puana ulaşılamamıştır)
+
+**2. Sprintte tamamalan puan**: 120 (kapsamın daraltılması sonucu iş yükü azalmış ve hedeflenen puana ulaşılmıtır)
+
+**Sprint içinde tamamlanması tahmin edilen puan**: Sprintte tamamlanması gereken 80 birim puan bulunmaktadır. (Projenin toplam puan maliyeti 260 birmdir - kapsamı 40 puan daralttık) 
+
+**Puan tamamlama mantığı**: Toplam maliyet olan 260 puandan şimdiye kadarki ilerlememiz olan 180 puanı çıkardığğımızda tamamlamamız gereken puana (80) ulaştık.
+
+**Backlog Düzeni**: Backloglarımız projenin tamamen bitirilmesi, bilinen tüm hatalardan arındırılması, hikayenin oyuna yedirilmesi, seslerin eklenmesi ve videonun hazırlanmasıdır.
+
+**Daily Scrum**: Ekipteki üye sayısın hatırı sayılır ölçüde azalmasından daily scrum toplantıları günlük watsapp üzerinden metin iletişimi ve 2 günde bir discord üzerinden genel fikir alışverişi yapılarak gerçekleştirilmiştir. 2. sprintteki bu iletişim şekli devam ettirilmiştir
+
+Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
+
+**Sprint board update**: Sprint board Ekran görüntüsü:
+
+<img width="1138" alt="SprintBoard" src="">
+<img width="1138" alt="SprintBoard" src="">
+
+**Ürün Durumu**: Ekran görüntüleri:
+
+<img width="783" alt="Oyun_1" src="">
+<img width="783" alt="Oyun_2" src="">
+<img width="783" alt="Oyun_3" src="">
+<img width="783" alt="Oyun_4" src="">
+<img width="783" alt="Oyun_5" src="">
+<img width="783" alt="Oyun_5" src="">
+
+**Sprint Review**:
+- Terraindeki tüm detaylar texture boyamaları ve koy'un etrafındaki ayrıntılar tamamlandı. Tüm adaların etrafı player denize düşmesin diye collider ile dönüldü.
+- Player, enemy ve boss'un beraber optimize çalışması ve eğlenceli bir deneyim için dengeli statlara sahip olmaları sağlandı.
+- Oyundaki tüm fiziksel işler (gameplay development, level design, sound design ve eklenmesi vb.) 2 kişi tarafından yapıldığı için diğer takım arkadalaşrından tamamen ayrılma kararı verildi.
+- İş güçünün yarılanmasından kaynaklı olarak bazı mekanikler oyundan çıkartıldı (Deniz savaşı ve denizde otomatik mermi atma kısmı çıkartıldı. Tuzak ve bulmaca sayısı 2 azaltıldı)
+
+**Sprint Retrospective:**
+- Sprintin başında kararlaştırılan ilerlemeye ulaşıldı ancak kapsam feda edildi. (oyunun tamamen bitirildi ve videosu çekilip yayınlandı)
+
+**Sprint Note:**
+- Oyunumuzda API entegrasyonu bulunmaktadır, ilk sahnede giriş kısmında "About" butonuna tıklayınca sağ taraftaki metin API yardımıyla nternetten çekilmektedir.
+- Gameanalitic kulumu yapılmış ağlantısı sağlanmış ancak veri gönderilmesi yapılamamıştır. (Oyunu herhangi bir pazarda yayınlamamamız ile alakalı olabileceği sonucuna varılmıştır.) 
+
 
