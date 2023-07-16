@@ -168,6 +168,6 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint Note:**
 - Oyunumuzda API entegrasyonu bulunmaktadır, ilk sahnede giriş kısmında "About" butonuna tıklayınca sağ taraftaki metin API yardımıyla internetten çekilmektedir.
-- gameanalytics kulumu yapılmış ağlantısı sağlanmış ancak veri gönderilmesi yapılamamıştır. (Oyunu herhangi bir pazarda yayınlamamamız ile alakalı olabileceği sonucuna varılmıştır.) 
+- Gameanalytics kulumu yapılmış ağlantısı sağlanmış ancak veri gönderilmesi yapılamamıştır. (Oyunu herhangi bir pazarda yayınlamamamız ile alakalı olabileceği sonucuna varılmıştır.) 
 
 
