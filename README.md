@@ -145,8 +145,8 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint board update**: Sprint board Ekran görüntüsü:
 
-<img width="1138" alt="SprintBoard" src="">
-<img width="1138" alt="SprintBoard" src="">
+<img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/kanban-1.png">
+<img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/kanban-2.png">
 
 **Ürün Durumu**: Ekran görüntüleri:
 
@@ -168,6 +168,8 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 
 **Sprint Note:**
 - Oyunumuzda API entegrasyonu bulunmaktadır, ilk sahnede giriş kısmında "About" butonuna tıklayınca sağ taraftaki metin API yardımıyla internetten çekilmektedir.
-- Gameanalytics kulumu yapılmış ağlantısı sağlanmış ancak veri gönderilmesi yapılamamıştır. (Oyunu herhangi bir pazarda yayınlamamamız ile alakalı olabileceği sonucuna varılmıştır.) 
+<img width="783" alt="API" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/API.jpg">
 
+- Gameanalytics kulumu yapılmış ağlantısı sağlanmış ancak veri gönderilmesi yapılamamıştır. (Oyunu herhangi bir pazarda yayınlamamamız ile alakalı olabileceği sonucuna varılmıştır.) 
+<img width="783" alt="Oyun_5" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Gameanalytics.jpg">
 
