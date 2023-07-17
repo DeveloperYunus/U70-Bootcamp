@@ -12,7 +12,7 @@ Unity U70 - Pirate Game
 ## Ürün İsmi
 
 Pirate's Story
-<img width="1138" alt="SprintBoard" src="">
+<img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Pirate%20Story%20Logo%20Textles%20-%201920%20x%201080.png">
 
 ## Açıklama
 
