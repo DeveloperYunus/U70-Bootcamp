@@ -197,4 +197,6 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 - Gameanalytics kulumu yapılmış ağlantısı sağlanmış ancak veri gönderilmesi yapılamamıştır. (Oyunu herhangi bir pazarda yayınlamamamız ile alakalı olabileceği sonucuna varılmıştır.) 
 <img width="783" alt="Oyun_5" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Gameanalytics.jpg">
 
+- Oyunumuz pc platformu için (steam) üretilmiştir ve ticarileştirme sistemi satın alım olarak planlanmıştır. Bu yüzden test reklamları eklenmemiştir. 
+
 Ekipte yalnızca iki kişi olmasına rağmen projeyi bırakmayıp azim ile devam ettirdikleri için Yunus Emre KEHRİBAR'a ve Sibel ERKOTA'ya teşekkür ederiz.
