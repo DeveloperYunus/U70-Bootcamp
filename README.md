@@ -151,31 +151,31 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 **Ürün Durumu**: Ekran görüntüleri:
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-0.png" width="500" alt="Resim 1" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-1.png" width="500" alt="Resim 2" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-0.png" width="490" alt="Resim 1" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-1.png" width="490" alt="Resim 2" /> 
 </p>
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-2.png" width="500" alt="Resim 3" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/gAME-3.png" width="500" alt="Resim 4" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-2.png" width="490" alt="Resim 3" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/gAME-3.png" width="490" alt="Resim 4" /> 
 </p>
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-4.png" width="330" alt="Resim 5" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-5.png" width="330" alt="Resim 6" /> 
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-6.png" width="330" alt="Resim 7" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-4.png" width="320" alt="Resim 5" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-5.png" width="320" alt="Resim 6" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-6.png" width="320" alt="Resim 7" /> 
 </p>
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-7.png" width="330" alt="Resim 8" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-8.png" width="330" alt="Resim 9" /> 
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-9.png" width="330" alt="Resim 10" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-7.png" width="320" alt="Resim 8" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-8.png" width="320" alt="Resim 9" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-9.png" width="320" alt="Resim 10" /> 
 </p>
 
 <p align="center">
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-10.png" width="330" alt="Resim 11" />
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-11.png" width="330" alt="Resim 12" /> 
-  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-12.png" width="330" alt="Resim 13" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-10.png" width="320" alt="Resim 11" />
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-11.png" width="320" alt="Resim 12" /> 
+  <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-12.png" width="320" alt="Resim 13" /> 
 </p>
 
 <img src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Game-13.png" width="1000" alt="Resim 14" /> 
@@ -197,3 +197,4 @@ Scrum Notları : https://1drv.ms/w/s!AvADog7jJu1_gnF8u4Huk3Pf5lIo?e=hco0K9
 - Gameanalytics kulumu yapılmış ağlantısı sağlanmış ancak veri gönderilmesi yapılamamıştır. (Oyunu herhangi bir pazarda yayınlamamamız ile alakalı olabileceği sonucuna varılmıştır.) 
 <img width="783" alt="Oyun_5" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Sprint%203/Gameanalytics.jpg">
 
+Ekipte yalnızca iki kişi olmasına rağmen projeyi bırakmayıp azim ile devam ettirdikleri için Yunus Emre KEHRİBAR'a ve Sibel ERKOTA'ya teşekkür ederiz.
