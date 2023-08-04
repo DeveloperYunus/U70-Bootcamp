@@ -14,7 +14,8 @@ Unity U70 - Pirate Game
 Pirate's Story
 <img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Pirate%20Story%20Logo%20Textles%20-%201920%20x%201080.png">
 
-# Fragman : https://www.youtube.com/watch?v=Zaq6FjgX3_s
+
+## Fragman : https://www.youtube.com/watch?v=Zaq6FjgX3_s
 
 ## Açıklama
 
