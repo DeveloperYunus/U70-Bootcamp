@@ -14,6 +14,8 @@ Unity U70 - Pirate Game
 Pirate's Story
 <img width="1138" alt="SprintBoard" src="https://github.com/DeveloperYunus/U70-Bootcamp/blob/main/.ScreenShoots/Pirate%20Story%20Logo%20Textles%20-%201920%20x%201080.png">
 
+# Fragman : https://www.youtube.com/watch?v=Zaq6FjgX3_s
+
 ## Açıklama
 
 "Pirate's Story", heyecan dolu bir macera oyunudur. Dört farklı ziyaret edilebilir adada korsan olarak yolculuk yapacak ve özgürlüğüne ulaşmak için mücadele edeceksiniz. Adalarda sizi bekleyen bulmacaları çözerek ilerlerken, dikkatli olmanız gereken bubi tuzakları ve sizi de kendi aralarına katmak için can atan iskeletlerle karşılaşacaksınız. İlk adada bulunan bilgi, size diğer adaları gösterecek ve özgürlüğe giden yolu açacak. Son ada ise sizi zorlu bir dungeon'a götürecek. İskeletlere karşı savaşarak ilerlemeli ve en büyük Korsan Kaptan'ı yenmelisiniz. Korsanınızın mutlu mesut yaşamasını sağlamak sizin elinizde!
